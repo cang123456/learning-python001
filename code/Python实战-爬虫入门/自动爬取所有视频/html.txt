@@ -1,0 +1,1414 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="5星图书榜,5星图书排行榜" />
+<meta name="description" content="当当5星图书排行榜，提供真实、权威、可信的5星图书榜数据，查看5星图书排行榜，就上DangDang.COM。" />
+
+<title>【5星图书】畅销榜-近30日5星图书榜-当当5星图书排行榜</title>
+    <script type="text/javascript" src="/books/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/books/js/common.js"></script>
+    <script type="text/javascript" src="/books/js/popwin.js"></script>
+    <script type="text/javascript" src="http://static.ddimg.cn/js/login/LoginWindow.js"></script>
+    <link type="text/css" href="/books/css/bang_list.css" rel="stylesheet" />
+    <script type="text/javascript" src="/books/js/DD_belatedPNG_0.0.8a.js"></script>
+    <script type="text/javascript">
+    DD_belatedPNG.fix('.level,.level span');
+    </script> 
+    <script type="text/javascript" src="http://a.dangdang.com/smart.js"></script>
+</head>
+<body>
+    
+    <!-- 页头 begin -->
+    <script>var accessbilityUrl = "//static.dangdang.com/fed/accessbility/1.0.0/accessbility.min.js";var accessbilitySwitch = "1";</script>
+<script type="text/javascript" defer="" async="" src="//static.dangdang.com/js/header2012/pagetop_accessbility.min.js?v=20230626" ></script><script type="text/javascript">
+    eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('r(1c 1H=="O"){o U;(p(){o k={1d:"1I.1J",1e:\'1K\',D:\'O\',1f:\'O\'};k.1g={1h:0,1L:"",F:8,1i:p(a){o b=l.1h?"1M":"1N";o c="";P(o i=0;i<a.B*4;i++){c+=b.1j((a[i>>2]>>((i%4)*8+4))&1k)+b.1j((a[i>>2]>>((i%4)*8))&1k)}u c},1l:p(x,e){x[e>>5]|=1O<<((e)%32);x[(((e+1P)>>>9)<<4)+14]=e;o a=1Q;o b=-1R;o c=-1S;o d=1T;P(o i=0;i<x.B;i+=16){o f=a;o g=b;o h=c;o j=d;a=l.v(a,b,c,d,x[i+0],7,-1U);d=l.v(d,a,b,c,x[i+1],12,-1V);c=l.v(c,d,a,b,x[i+2],17,1W);b=l.v(b,c,d,a,x[i+3],22,-1X);a=l.v(a,b,c,d,x[i+4],7,-1Y);d=l.v(d,a,b,c,x[i+5],12,1Z);c=l.v(c,d,a,b,x[i+6],17,-24);b=l.v(b,c,d,a,x[i+7],22,-25);a=l.v(a,b,c,d,x[i+8],7,26);d=l.v(d,a,b,c,x[i+9],12,-27);c=l.v(c,d,a,b,x[i+10],17,-28);b=l.v(b,c,d,a,x[i+11],22,-29);a=l.v(a,b,c,d,x[i+12],7,2a);d=l.v(d,a,b,c,x[i+13],12,-2b);c=l.v(c,d,a,b,x[i+14],17,-2c);b=l.v(b,c,d,a,x[i+15],22,2d);a=l.w(a,b,c,d,x[i+1],5,-2e);d=l.w(d,a,b,c,x[i+6],9,-2f);c=l.w(c,d,a,b,x[i+11],14,2g);b=l.w(b,c,d,a,x[i+0],20,-2h);a=l.w(a,b,c,d,x[i+5],5,-2i);d=l.w(d,a,b,c,x[i+10],9,2j);c=l.w(c,d,a,b,x[i+15],14,-2k);b=l.w(b,c,d,a,x[i+4],20,-2l);a=l.w(a,b,c,d,x[i+9],5,2m);d=l.w(d,a,b,c,x[i+14],9,-2n);c=l.w(c,d,a,b,x[i+3],14,-2o);b=l.w(b,c,d,a,x[i+8],20,2p);a=l.w(a,b,c,d,x[i+13],5,-2q);d=l.w(d,a,b,c,x[i+2],9,-2r);c=l.w(c,d,a,b,x[i+7],14,2s);b=l.w(b,c,d,a,x[i+12],20,-2t);a=l.z(a,b,c,d,x[i+5],4,-2u);d=l.z(d,a,b,c,x[i+8],11,-2v);c=l.z(c,d,a,b,x[i+11],16,2w);b=l.z(b,c,d,a,x[i+14],23,-2x);a=l.z(a,b,c,d,x[i+1],4,-2y);d=l.z(d,a,b,c,x[i+4],11,2z);c=l.z(c,d,a,b,x[i+7],16,-2A);b=l.z(b,c,d,a,x[i+10],23,-2B);a=l.z(a,b,c,d,x[i+13],4,2C);d=l.z(d,a,b,c,x[i+0],11,-2D);c=l.z(c,d,a,b,x[i+3],16,-2E);b=l.z(b,c,d,a,x[i+6],23,2F);a=l.z(a,b,c,d,x[i+9],4,-2G);d=l.z(d,a,b,c,x[i+12],11,-2H);c=l.z(c,d,a,b,x[i+15],16,2I);b=l.z(b,c,d,a,x[i+2],23,-2J);a=l.A(a,b,c,d,x[i+0],6,-2K);d=l.A(d,a,b,c,x[i+7],10,2L);c=l.A(c,d,a,b,x[i+14],15,-2M);b=l.A(b,c,d,a,x[i+5],21,-2N);a=l.A(a,b,c,d,x[i+12],6,2O);d=l.A(d,a,b,c,x[i+3],10,-2P);c=l.A(c,d,a,b,x[i+10],15,-2Q);b=l.A(b,c,d,a,x[i+1],21,-2R);a=l.A(a,b,c,d,x[i+8],6,2S);d=l.A(d,a,b,c,x[i+15],10,-2T);c=l.A(c,d,a,b,x[i+6],15,-2U);b=l.A(b,c,d,a,x[i+13],21,2V);a=l.A(a,b,c,d,x[i+4],6,-2W);d=l.A(d,a,b,c,x[i+11],10,-2X);c=l.A(c,d,a,b,x[i+2],15,2Y);b=l.A(b,c,d,a,x[i+9],21,-2Z);a=l.C(a,f);b=l.C(b,g);c=l.C(c,h);d=l.C(d,j)}u V(a,b,c,d)},J:p(q,a,b,x,s,t){u l.C(l.1m(l.C(l.C(a,q),l.C(x,t)),s),b)},v:p(a,b,c,d,x,s,t){u l.J((b&c)|((~b)&d),a,b,x,s,t)},w:p(a,b,c,d,x,s,t){u l.J((b&d)|(c&(~d)),a,b,x,s,t)},z:p(a,b,c,d,x,s,t){u l.J(b^c^d,a,b,x,s,t)},A:p(a,b,c,d,x,s,t){u l.J(c^(b|(~d)),a,b,x,s,t)},1n:p(a){o b=V();o c=(1<<l.F)-1;P(o i=0;i<a.B*l.F;i+=l.F)b[i>>5]|=(a.30(i/l.F)&c)<<(i%32);u b},C:p(x,y){o a=(x&W)+(y&W);o b=(x>>16)+(y>>16)+(a>>16);u(b<<16)|(a&W)},1m:p(a,b){u(a<<b)|(a>>>(32-b))},1o:p(s){u l.1i(l.1l(l.1n(s),s.B*l.F))}};k.X={1p:p(a){o b=Y(a)+"=",Q=K.L.E(b),Z=1q;r(Q>-1){o c=K.L.E(";",Q);r(c==-1){c=K.L.B}Z=31(K.L.18(Q+b.B,c))}u Z},19:p(a,b,c,d,e,f){o g=Y(a)+"="+Y(b);r(c 33 N){g+="; 34="+c.36()}r(d){g+="; 37="+d}r(e){g+="; 38="+e}r(f){g+="; 39"}K.L=g},3a:p(a,b,c,d){l.19(a,"",G N(0),b,c,d)}};k.3b={3c:p(a){o b=G 3d();r(a.E("?")>0){o c=a.18(a.E("?")+1);r(c.E("#")>0){c=c.18(0,c.E("#"))}o d=c.1a("&");P(o i=0;i<d.B;i++){b[d[i].1a("=")[0]]=d[i].1a("=")[1]}}u b}};k.3e=p(a,b,c){r(a.1r){a.1r(b,c,1s)}R r(a.1t){a.1t("T"+b,c)}R{a["T"+b]=c}};k.3f=p(a,b,c){r(a.1u){a.1u(b,c,1s)}R r(a.1v){a.1v("T"+b,c)}R{a["T"+b]=1q}};k.3g=p(x){o a=3h(x);r(3i(a)){u 0.1w}o a=I.3j(x*1x)/1x;o b=a.3k();o c=b.E(\'.\');r(c<0){c=b.B;b+=\'.\'}3l(b.B<=c+2){b+=\'0\'}u b};k.1y=p(){o n=G N();o y=n.3m()+\'\';o m=n.3n()+1;r(m<10)m="0"+m;o d=n.3o();r(d<10)d="0"+d;o H=n.3p();r(H<10)H="0"+H;o M=n.3q();r(M<10)M="0"+M;o S=n.3r();r(S<10)S="0"+S;o a="1w"+n.3s();a=a.1b(a.B-3,3);o b=I.1z(1A+I.1B()*1C);o c=I.1z(1A+I.1B()*1C);o e=y+m+d+H+M+S+a+b+c+k.1e;o f=k.1g.1o(e);f=k.1D(f);u y+m+d+H+M+S+a+f+b+c};k.1D=p(a){o b=3t(a.1b(0,8),16);o c=3u(b).1b(0,6);o d=c.B;r(d<6){c+=k.1E(\'0\',I.3v(6-d))}u c};k.1E=p(a,b){u G V(b+1).3w(a)};k.1F=p(){o t=G N();u t.3x()};k.1G=p(){k.D=k.X.1p("D");r(1c k.D==\'O\'||!/^\\d{35}$/.3y(k.D)){o a=G N(3z,1,1);k.D=k.1y();k.X.19("D",k.D,a,"/",k.1d)}k.1f=k.1F()};U=k;U.1G()})()}',62,222,'|||||||||||||||||||||this|||var|function||if|||return|md5_ff|md5_gg|||md5_hh|md5_ii|length|safe_add|__permanent_id|indexOf|chrsz|new||Math|md5_cmn|document|cookie||Date|undefined|for|cookieStart|else||on|ddclick_head_functions|Array|0xFFFF|CookieUtil|encodeURIComponent|cookieValue|||||||||substring|set|split|substr|typeof|__cookieDomain|__ddclick_hash_key|__timestap|Md5Util|hexcase|binl2hex|charAt|0xF|core_md5|bit_rol|str2binl|hex_md5|get|null|addEventListener|false|attachEvent|removeEventListener|detachEvent|00|100|createPermanentID|floor|100000|random|900000|formatHashCode|str_repeat|initTime|init|ddclick_page_tracker|dangdang|com|DDClick521|b64pad|0123456789ABCDEF|0123456789abcdef|0x80|64|1732584193|271733879|1732584194|271733878|680876936|389564586|606105819|1044525330|176418897|1200080426|||||1473231341|45705983|1770035416|1958414417|42063|1990404162|1804603682|40341101|1502002290|1236535329|165796510|1069501632|643717713|373897302|701558691|38016083|660478335|405537848|568446438|1019803690|187363961|1163531501|1444681467|51403784|1735328473|1926607734|378558|2022574463|1839030562|35309556|1530992060|1272893353|155497632|1094730640|681279174|358537222|722521979|76029189|640364487|421815835|530742520|995338651|198630844|1126891415|1416354905|57434055|1700485571|1894986606|1051523|2054922799|1873313359|30611744|1560198380|1309151649|145523070|1120210379|718787259|343485551|charCodeAt|decodeURIComponent||instanceof|expires||toGMTString|path|domain|secure|unset|URLUtil|getKeyValueArray|Object|addEventHandler|removeEventHandler|changeTwoDecimal|parseFloat|isNaN|round|toString|while|getFullYear|getMonth|getDate|getHours|getMinutes|getSeconds|getMilliseconds|parseInt|String|abs|join|getTime|test|2020'.split('|'),0,{}))</script>
+<script type="text/javascript">
+function is_narrow(){
+    var datanav="";
+    if(screen.width < 1210){
+       datanav='<li ><a name="nav1" href="https://book.dangdang.com/" target="_blank">图书</a></li><li ><a name="nav1" href="https://category.dangdang.com/cp01.82.00.00.html" target="_blank">特装书</a></li><li ><a name="nav1" href="https://category.dangdang.com/cp01.83.00.00.html" target="_blank">亲签书</a></li><li ><a name="nav1" href="http://e.dangdang.com/index_page.html" target="_blank">电子书</a></li><li ><a name="nav1" href="https://category.dangdang.com/cp01.76.00.00.html" target="_blank">课程</a></li><li ><a name="nav1" href="https://shop.dangdang.com/25161" target="_blank">正版教材</a></li><li ><a name="nav1" href="https://book.dangdang.com/20251009_guof" target="_blank">特色书城</a></li><li ><a name="nav1" href="http://category.dangdang.com/cid4004344.html" target="_blank">童装童鞋</a></li><li ><a name="nav1" href="https://product.dangdang.com/29980423.html" target="_blank">地下王朝</a><span class="icon_n"><img src="https://platform-permanent.ddimg.cn/pt-front-cms-upload-file/2026/1/5/2026010510452716634.png" alt="" /></span></li>';
+    }else{
+    datanav='<li ><a name="nav1" href="https://book.dangdang.com/" target="_blank">图书</a></li><li ><a name="nav1" href="https://category.dangdang.com/cp01.82.00.00.html" target="_blank">特装书</a></li><li ><a name="nav1" href="https://category.dangdang.com/cp01.83.00.00.html" target="_blank">亲签书</a></li><li ><a name="nav1" href="http://e.dangdang.com/index_page.html" target="_blank">电子书</a></li><li ><a name="nav1" href="https://category.dangdang.com/cp01.76.00.00.html" target="_blank">课程</a></li><li ><a name="nav1" href="https://shop.dangdang.com/25161" target="_blank">正版教材</a></li><li ><a name="nav1" href="https://book.dangdang.com/20251009_guof" target="_blank">特色书城</a></li><li ><a name="nav1" href="http://category.dangdang.com/cid4004344.html" target="_blank">童装童鞋</a></li><li ><a name="nav1" href="https://product.dangdang.com/29980423.html" target="_blank">地下王朝</a><span class="icon_n"><img src="https://platform-permanent.ddimg.cn/pt-front-cms-upload-file/2026/1/5/2026010510452716634.png" alt="" /></span></li>';
+    }
+    return datanav;
+}
+</script>
+<link href="//static.dangdang.com/css/header2012/header_150803.css?20251111" rel="stylesheet" type="text/css">
+<script charset="gb2312" type="text/javascript">var width = 1; narrow = 0;</script>
+<script src="//static.dangdang.com/js/header2012/pagetop2015_0827.js?20251111" charset="gb2312" type="text/javascript"></script>
+<script src="//static.dangdang.com/js/header2012/dd.menu-aim.js?20251111" charset="gb2312" type="text/javascript"></script>
+
+
+<div id="hd">
+<div id="tools">
+<div class="tools">
+<style>.ddnewhead_operate_nav img {display: inline;}</style>
+<div class="ddnewhead_operate" dd_name="顶链接">
+  <div style="float:right">
+    <div class="new_head_znx" id="znx_content" style="display:none;float:left"></div>
+    <div class="ddnewhead_welcome" display="none;" style="float:left">
+      <span id="nickname"><span class="hi hi_none">欢迎光临当当，请</span><a
+          href="https://login.dangdang.com/signin.aspx?returnurl=http%3A//www.dangdang.com/"
+          class="login_link">登录</a><a href="https://login.dangdang.com/Register.aspx">免费注册</a></span>
+      <div class="tel_pop" style="display:none" id="__ddnav_sjdd"
+        onmouseover="showgaoji('a_phonechannel','__ddnav_sjdd');"
+        onmouseout="hideotherchannel('a_phonechannel','__ddnav_sjdd');">
+        <a target="_blank" href="http://t.dangdang.com/20130220_ydmr" class="title"><i
+            class="icon_tel"></i>手机当当</a><i class="title_shadow"></i>
+        <ul class="tel_pop_box">
+          <li><a href="http://t.dangdang.com/20130220_ydmr" dd_name="手机二维码"><span>当当手机客户端</span><img
+                src="//img3.ddimg.cn/00363/doc/erweima2.png"><span class="text">随手查订单<br>随时享优惠</span></a></li>
+        </ul>
+      </div>
+    </div>
+<ul class="ddnewhead_operate_nav" style="float:left"><li class="ddnewhead_cart"><a href="javascript:AddToShoppingCart(0);" name="购物车" dd_name="购物车">
+<img src="https://platform-permanent.ddimg.cn/pt-front-cms-upload-file/2025/12/19/2025121912002032910.png" style="width: 15px;height: 14px;margin-right: 4px;position: relative;top: 2px;" />
+购物车<b id="cart_items_count"></b></a></li><li class="wddd0"><a target="_blank" href="http://myhome.dangdang.com/myOrder" name="我的订单" dd_name="我的订单" id="a_wddd0channel"
+>我的订单</a>
+
+
+</li><li class="wdysf1"><a target="_blank" href="http://e.dangdang.com/booksshelf_page.html" name="我的云书房" dd_name="我的云书房" id="a_wdysf1channel"
+>我的云书房</a>
+
+
+</li><li class="wddd2"><a class="menu_btn" target="_blank" href="http://myhome.dangdang.com/" name="我的当当" dd_name="我的当当" id="a_wddd2channel"
+onmouseover="showgaoji('a_wddd2channel','__ddnav_wddd2')" onmouseout="hideotherchannel('a_wddd2channel','__ddnav_wddd2');">我的当当</a>
+
+    <ul class="ddnewhead_gcard_list" id="__ddnav_wddd2" onmouseover="showgaoji('a_wddd2channel','__ddnav_wddd2')"
+    onmouseout="hideotherchannel('a_wddd2channel','__ddnav_wddd2');"><li>
+    <a target="_blank" href="http://myhome.dangdang.com/mypoint?ref=my-0-L" name="mydd_4" dd_name="银铃铛抵现" rel="nofollow">银铃铛抵现</a>
+</li><li>
+    <a target="_blank" href="http://myhome.dangdang.com/myFavorite" name="mydd_4" dd_name="我的收藏" rel="nofollow">我的收藏</a>
+</li><li>
+    <a target="_blank" href="http://noncash.dangdang.com/balance/" name="mydd_4" dd_name="我的余额" rel="nofollow">我的余额</a>
+</li><li>
+    <a target="_blank" href="http://comment.dangdang.com/comment" name="mydd_4" dd_name="我的评论" rel="nofollow">我的评论</a>
+</li><li>
+    <a target="_blank" href="http://newaccount.dangdang.com/payhistory/mycoupon.aspx" name="mydd_4" dd_name="礼券/礼品卡" rel="nofollow">礼券/礼品卡</a>
+</li> </ul>
+
+</li><li class="ddpt3"><a target="_blank" href="http://t.dangdang.com/pintuan_list" name="当当拼团" dd_name="当当拼团" id="a_ddpt3channel"
+>当当拼团</a>
+
+
+</li><li class="qycg4"><a class="menu_btn" target="_blank" href="http://giftcard.dangdang.com/" name="企业采购" dd_name="企业采购" id="a_qycg4channel"
+onmouseover="showgaoji('a_qycg4channel','__ddnav_qycg4')" onmouseout="hideotherchannel('a_qycg4channel','__ddnav_qycg4');">企业采购</a>
+
+    <ul class="ddnewhead_gcard_list" id="__ddnav_qycg4" onmouseover="showgaoji('a_qycg4channel','__ddnav_qycg4')"
+    onmouseout="hideotherchannel('a_qycg4channel','__ddnav_qycg4');"><li>
+    <a target="_blank" href="http://b2b.dangdang.com/ddRegistered?custId=2c21d394a078586625dec5580df4f63f&sid=pc_8b1ba6ca9befd77f806ba23c7fed310a7c001a089742c9a5d1c9bf27c1bf1c98" name="mydd_4" dd_name="企业/馆配" rel="nofollow">企业/馆配</a>
+</li><li>
+    <a target="_blank" href="http://giftcard.dangdang.com/" name="mydd_4" dd_name="礼品卡采购" rel="nofollow">礼品卡采购</a>
+</li><li>
+    <a target="_blank" href="http://newaccount.dangdang.com/payhistory/mymoney.aspx" name="mydd_4" dd_name="礼品卡激活" rel="nofollow">礼品卡激活</a>
+</li><li>
+    <a target="_blank" href="http://help.dangdang.com/details/page24" name="mydd_4" dd_name="礼品卡使用" rel="nofollow">礼品卡使用</a>
+</li><li>
+    <a target="_blank" href="http://b2b.dangdang.com/" name="mydd_4" dd_name="分销/荐购" rel="nofollow">分销/荐购</a>
+</li><li>
+    <a target="_blank" href="http://giftcard.dangdang.com/goods?type=mall" name="mydd_4" dd_name="礼品卡专区" rel="nofollow">礼品卡专区</a>
+</li> </ul>
+
+</li><li class="khfw5"><a class="menu_btn" target="_blank" href="http://help.dangdang.com/index" name="客户服务" dd_name="客户服务" id="a_khfw5channel"
+onmouseover="showgaoji('a_khfw5channel','__ddnav_khfw5')" onmouseout="hideotherchannel('a_khfw5channel','__ddnav_khfw5');">客户服务</a>
+
+    <ul class="ddnewhead_gcard_list" id="__ddnav_khfw5" onmouseover="showgaoji('a_khfw5channel','__ddnav_khfw5')"
+    onmouseout="hideotherchannel('a_khfw5channel','__ddnav_khfw5');"><li>
+    <a target="_blank" href="http://help.dangdang.com/index" name="mydd_4" dd_name="帮助中心" rel="nofollow">帮助中心</a>
+</li><li>
+    <a target="_blank" href="http://return.dangdang.com/reverseapplyselect.aspx" name="mydd_4" dd_name="自助退换货" rel="nofollow">自助退换货</a>
+</li><li>
+    <a target="_blank" href="http://order.dangdang.com/InvoiceApply/InvoiceOnlineReissue.aspx" name="mydd_4" dd_name="自助发票" rel="nofollow">自助发票</a>
+</li><li>
+    <a target="_blank" href="http://help.dangdang.com/details/page206" name="mydd_4" dd_name="联系客服" rel="nofollow">联系客服</a>
+</li><li>
+    <a target="_blank" href="http://help.dangdang.com/details/page206" name="mydd_4" dd_name="我要投诉" rel="nofollow">我要投诉</a>
+</li> </ul>
+
+</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="header_end"></div>
+<!--CreateDate  2026-01-05 16:30:01--><div style="position:relative;" class="logo_line_out" ddaccregion="mutual">
+<div class="logo_line" dd_name="搜索框">
+    <div class="logo"><img src="https://platform-permanent.ddimg.cn/pt-front-cms-upload-file/2025/12/18/2025121814464873534.png" usemap="#logo_link"/>
+                         <map name="logo_link" id="logo_link" dd_name="logo区" ><area shape="rect" coords="0,18,200,93" href="http://www.dangdang.com" title="当当" onfocus="this.blur();" tabindex="-1">
+                         <area shape="rect" coords="200,18,320,93" href="http://www.dangdang.com/" title="当当" target="_blank" onfocus="this.blur();" tabindex="-1"></map></div>
+    <div class="search">
+        <form action="//search.dangdang.com" name="searchform"  id="form_search_new" onsubmit="return searchsubmit();"  method="GET">
+            <label  for="key_S" class="label_search" id="label_key" onclick="this.style.color='rgb(255, 255, 255)';" style="visibility: visible; color: rgb(102, 102, 102);" >地下王朝 特装版</label>
+            <input type="text" class="text gray"  name="key" ID="key_S" autocomplete="off" onclick="key_onclick(event);" onfocus="key_onfocus(event);"  onblur="key_onblur();" onbeforepaste="onpaste_search();"/><a href="javascript:void(0);" onclick="clearkeys();" class="del-keywords" tabindex="-1"></a><span class="select"  onmouseover="allCategoryShow();"  onmouseleave="allCategoryHide();" onmouseout='if("\v"!="v"){ allCategoryHide();}'><span id="Show_Category_Name" dd_name="全部分类">全部分类</span><span class="icon"></span>
+                <div id="search_all_category" class="select_pop" style="height:0px;padding: 0px;border-width: 0px;" dd_name="搜索分类">
+                    <a href="javascript:void(0);" onclick="selectCategory('',this);" ><span id="Show_Category_Name" dd_name="全部分类" tabindex="-1">全部分类</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory('100000',this);" dd_name="尾品汇"><span>尾品汇</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory('01.00.00.00.00.00',this);" dd_name="图书"><span>图书</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory('98.00.00.00.00.00',this);" dd_name="电子书"><span>电子书</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory('03.00.00.00.00.00',this);" dd_name="音像"><span>音像</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory('05.00.00.00.00.00',this);" dd_name="影视"><span>影视</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4002074,this);" dd_name="时尚美妆"><span>时尚美妆</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4001940,this);" dd_name="母婴用品"><span>母婴用品</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4002061,this);" dd_name="玩具"><span>玩具</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4004866,this);" dd_name="孕婴服饰"><span>孕婴服饰</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4004344,this);" dd_name="童装童鞋"><span>童装童鞋</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4003900,this);" dd_name="家居日用"><span>家居日用</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4003760,this);" dd_name="家具装饰"><span>家具装饰</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4003844,this);" dd_name="服装"><span>服装</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4003872,this);" dd_name="鞋"><span>鞋</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4001829,this);" dd_name="箱包皮具"><span>箱包皮具</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4003639,this);" dd_name="手表饰品"><span>手表饰品</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4003728,this);" dd_name="运动户外"><span>运动户外</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4002429,this);" dd_name="汽车用品"><span>汽车用品</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4002145,this);" dd_name="食品"><span>食品</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4006497,this);" dd_name="手机通讯"><span>手机通讯</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4003613,this);" dd_name="数码影音"><span>数码影音</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4003819,this);" dd_name="电脑办公"><span>电脑办公</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4007241,this);" dd_name="大家电"><span>大家电</span></a>
+                                        <a href="javascript:void(0);" onclick="selectCategory(4001001,this);" dd_name="家用电器"><span>家用电器</span></a>
+                                    </div>
+            </span>
+            <input type="hidden" id="default_key" value="地下王朝 特装版"/>
+            <input type="hidden" id="default_key_link" value="https://search.dangdang.com/?key=%B5%D8%CF%C2%CD%F5%B3%AF%20%CC%D8%D7%B0%B0%E6&act=input" mid1_value="12" api_step="d"/>
+            <input type="submit" id="search_btn" dd_name="搜索按钮"  style="display:none"/>
+            <input id="SearchFromTop" style="display:none" type="hidden" name="SearchFromTop" value="1"/>
+            <input type="button" id="suggest_product_btn" name="suggestproduct_btn"  style="display:none" onclick="void(0)"/>
+            <input type="button" id="suggest_class_btn" name="suggestclass_btn"  style="display:none" onclick="void(0)"/>
+            <input type="submit" id="suggest_searchkey_btn" name="suggestsearchkey_btn"  style="display:none" dd_name="搜索按钮"/>
+            <input type="hidden" id="catalog_S" name="catalog" value="" >
+            <input type="button" class="button" dd_name="搜索按钮" onclick="javascript:document.getElementById('search_btn').click();"/>
+        </form>
+    </div>
+    <div class="search_bottom">
+        <div class="search_hot">热搜: <a href="https://search.dangdang.com/?key=%BC%D7%B9%C7%CE%C4%D1%A7%D0%A3%CF%B5%C1%D0&act=input" name="hotword" target="_blank">甲骨文学校系列</a><a href="https://search.dangdang.com/?key=%D3%CE%CF%B7%C8%EB%C7%D6&act=input" name="hotword" target="_blank">游戏入侵</a><a href="https://search.dangdang.com/?key=%CA%B1%BC%E4%BC%F2%CA%B7&act=input" name="hotword" target="_blank">时间简史</a><a href="https://search.dangdang.com/?key=%D7%D4%CA%C9%C1%A6&act=input" name="hotword" target="_blank">自噬力</a><a href="https://search.dangdang.com/?key=%C6%B6%C7%EE%B5%C4%B1%BE%D6%CA&act=input" name="hotword" target="_blank">贫穷的本质</a><a href="https://book.dangdang.com/20220907_3d2t" name="hotword" target="_blank">9.9元包邮</a></div>
+        <a href="http://search.dangdang.com/advsearch" class="search_advs" target="_blank" name="ddnav_adv_s" dd_name="高级搜索">高级搜索</a>
+    </div>
+    <div id="suggest_key" class="suggest_key" style="display:none;" ></div>
+    <div class="ddnew_cart"><a href="javascript:AddToShoppingCart(0);" name="购物车" dd_name="购物车"><i class="icon_card"></i>购物车<b id="cart_items_count"></b></a></div>
+    <div class="ddnew_order"><a target="_blank" href="http://myhome.dangdang.com/myOrder" name="我的订单" dd_name="我的订单" rel="nofollow">我的订单<b id="unpaid_num" style="color:#ff2832;font:bold 12px Arial;"></b></a></div>
+</div>
+</div><div class="nav_top" dd_name="一级导航条">
+<div class="nav_top">
+    <ul>
+        <li class="all"><a href="http://category.dangdang.com/?ref=www-0-C" id="a_category" name="cate" class="sort_button" onmouseover=showCategory('a_category','__ddnav_sort','//static.dangdang.com/js/header2012/categorydata_new.js?20251111'); onmouseout=closeCategory('__ddnav_sort'); dd_name="全部商品分类" target="_blank">全部商品分类</a></li>
+        <script language="javascript">document.write(is_narrow());</script>
+    </ul>
+</div>
+</div><div class="home_nav_l_box">
+<div class="home_nav_l" id="nav_l" style="display:none;">
+
+<div class="new_pub_nav_box"  dd_name="左侧分类导航" style="display:none;" id="__ddnav_sort" onmouseover="showdiv(event,'__ddnav_sort');" onmouseout="hiddenCategory(event,'__ddnav_sort');">
+    <span class="new_pub_line_a"></span>
+    <span class="new_pub_line_b"></span>
+    <div class="new_pub_nav_shadow" id="menu_list">
+		<ul class="new_pub_nav" id="menulist_content">
+            			<li class="n_b first"  dd_name="图书童书"  id="li_label_1" data-submenu-id="__ddnav_sort1" data_index="1" data_key="1000000" data_type="'goods'" >
+                <span class="nav" id="categoryh_1">
+                    <a name="newcate1"  dd_name="图书" id="cate_21091" href="https://book.dangdang.com/" target="_blank">图书</a>、<a name="newcate1"  dd_name="童书" id="cate_21092" href="https://book.dangdang.com/children?ref=book-01-A" target="_blank">童书</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="电子书"  id="li_label_2" data-submenu-id="__ddnav_sort2" data_index="2" data_key="1000001" data_type="'book'" >
+                <span class="nav" id="categoryh_2">
+                    <a name="newcate2"  dd_name="电子书" id="cate_21218" href="http://e.dangdang.com/index_page.html" target="_blank">电子书</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="创意文具"  id="li_label_3" data-submenu-id="__ddnav_sort3" data_index="3" data_key="1000002" data_type="'goods'" >
+                <span class="nav" id="categoryh_3">
+                    <a name="newcate3"  dd_name="创意文具" id="cate_21288" href="https://search.dangdang.com/?key=%B4%B4%D2%E2%CE%C4%BE%DF&act=input" target="_blank">创意文具</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="服饰内衣"  id="li_label_4" data-submenu-id="__ddnav_sort4" data_index="4" data_key="1000003" data_type="'goods'" >
+                <span class="nav" id="categoryh_4">
+                    <a name="newcate4"  dd_name="服饰" id="cate_21392" href="http://category.dangdang.com/cid4003844.html" target="_blank">服饰</a>、<a name="newcate4"  dd_name="内衣" id="cate_21393" href="http://category.dangdang.com/cid10010337.html" target="_blank">内衣</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="运动户外"  id="li_label_5" data-submenu-id="__ddnav_sort5" data_index="5" data_key="1000004" data_type="'goods'" >
+                <span class="nav" id="categoryh_5">
+                    <a name="newcate5"  dd_name="运动户外" id="cate_21455" href="https://search.dangdang.com/?key=%D4%CB%B6%AF%BB%A7%CD%E2&act=input&category_id=4003728&type=4003728" target="_blank">运动户外</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="孕婴童"  id="li_label_6" data-submenu-id="__ddnav_sort6" data_index="6" data_key="1000005" data_type="'goods'" >
+                <span class="nav" id="categoryh_6">
+                    <a name="newcate6"  dd_name="孕" id="cate_21503" href="https://category.dangdang.com/cid4004866.html" target="_blank">孕</a>、<a name="newcate6"  dd_name="婴" id="cate_21504" href="https://category.dangdang.com/cid4001940.html" target="_blank">婴</a>、<a name="newcate6"  dd_name="童" id="cate_21505" href="https://category.dangdang.com/cid4004344.html" target="_blank">童</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="家居家纺"  id="li_label_7" data-submenu-id="__ddnav_sort7" data_index="7" data_key="1000006" data_type="'goods'" >
+                <span class="nav" id="categoryh_7">
+                    <a name="newcate7"  dd_name="家居" id="cate_21559" href="https://search.dangdang.com/?key=%BC%D2%BE%D3&act=input&category_id=4003900&type=4003900" target="_blank">家居</a>、<a name="newcate7"  dd_name="家纺" id="cate_21560" href="https://search.dangdang.com/?key=%BC%D2%B7%C4&act=input&category_id=4003900&type=4003900" target="_blank">家纺</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="家具家装"  id="li_label_8" data-submenu-id="__ddnav_sort8" data_index="8" data_key="1000007" data_type="'goods'" >
+                <span class="nav" id="categoryh_8">
+                    <a name="newcate8"  dd_name="家具" id="cate_21613" href="http://category.dangdang.com/cid4004162.html" target="_blank">家具</a>、<a name="newcate8"  dd_name="家装" id="cate_21614" href="http://category.dangdang.com/cid4009484.html" target="_blank">家装</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="食品茶酒"  id="li_label_9" data-submenu-id="__ddnav_sort9" data_index="9" data_key="1000008" data_type="'goods'" >
+                <span class="nav" id="categoryh_9">
+                    <a name="newcate9"  dd_name="食品" id="cate_21678" href="https://search.dangdang.com/?key=%CA%B3%C6%B7&act=input&category_id=4002145&type=4002145" target="_blank">食品</a>、<a name="newcate9"  dd_name="茶酒" id="cate_21679" href="http://category.dangdang.com/cid4005722.html" target="_blank">茶酒</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="家用电器"  id="li_label_10" data-submenu-id="__ddnav_sort10" data_index="10" data_key="1000009" data_type="'goods'" >
+                <span class="nav" id="categoryh_10">
+                    <a name="newcate10"  dd_name="家用电器" id="cate_21702" href="https://search.dangdang.com/?key=%BC%D2%D3%C3%B5%E7%C6%F7&act=input&category_id=4001001&type=4001001" target="_blank">家用电器</a></span><span class="sign"></span>
+            </li>
+            			<li class="n_b"  dd_name="当当礼品卡"  id="li_label_11" data-submenu-id="__ddnav_sort11" data_index="11" data_key="1000010" data_type="'goods'" >
+                <span class="nav" id="categoryh_11">
+                    <a name="newcate11"  dd_name="当当礼品卡" id="cate_21741" href="http://giftcard.dangdang.com/" target="_blank">当当礼品卡</a></span><span class="sign"></span>
+            </li>
+            		</ul>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort1"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort2"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort3"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort4"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort5"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort6"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort7"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort8"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort9"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort10"></div>
+                <div class="new_pub_nav_pop" style="display: none;" id="__ddnav_sort11"></div>
+            </div>
+</div>
+</div></div>
+<div class="sub">
+    <ul>
+                <li><a name='nav2'  target=_blank  href=http://bang.dangdang.com/books/>图书排行榜</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/children>童书</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/study>中小学用书</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.03.htm>小说</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.05.htm>文学</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.01.htm>青春文学</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.07.htm>艺术</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.21.htm>成功励志</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.22.htm>管理</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.36.htm>历史</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.28.htm>哲学宗教</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.15.htm>亲子家教</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/01.18.htm>保健养生</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/exam?biaoti>考试</a></li>
+                        <li><a name='nav2'  target=_blank  href=https://book.dangdang.com/exam?biaoti>科技</a></li>
+                        <li><a name='nav2'  target=_blank  href=http://category.dangdang.com/cp01.58.00.00.00.00.html>进口原版</a></li>
+                        <li><a name='nav2'  target=_blank  href=http://e.dangdang.com/index_page.html>电子书</a></li>
+                    </ul>
+</div>
+</div>
+<script type="text/javascript">
+var newsuggesturl = "//schprompt.dangdang.com/suggest_new.php?";
+var nick_num = 1;
+initHeaderOperate();Suggest_Initialize("key_S");
+if(!window.onload){
+    window.onload=function(){if(sug_gid("label_key").style.visibility=="visible")sug_gid(search_input_id).value="";}
+}else{
+    var funcload=window.onload;
+    window.onload=function(){funcload();if(sug_gid("label_key").style.visibility=="visible")sug_gid(search_input_id).value="";}
+}
+ddmenuaim(document.getElementById("menulist_content"),{activate: activateSubmenu,deactivate: deactivateSubmenu});
+</script>
+<!--DOC-HEAD-END--><!-- 页头 end -->
+    <div class="bang_wrapper">
+        <div class="layout_location"><a href="http://www.dangdang.com">当当网</a><span class="path">&gt;</span>
+            <a href="http://bang.dangdang.com/books/">图书榜</a>
+        <span class="path">&gt;</span>
+        <span>好评榜</span> 
+</div>        <!--bang_title-->
+        <div class="bang_title">
+    <div class="tab">
+                <h2 ><a href="http://bang.dangdang.com/books/bestsellers/01.00.00.00.00.00-24hours-0-0-1-1">图书畅销榜</a></h2>  
+                <h2 ><a href="http://bang.dangdang.com/books/newhotsales/01.00.00.00.00.00-24hours-0-0-1-1">新书热卖榜</a></h2>  
+                <h2 ><a href="http://bang.dangdang.com/books/childrensbooks/01.41.00.00.00.00-24hours-0-0-1-1">童书榜</a></h2>  
+                <h2 ><a href="http://bang.dangdang.com/books/hotbang">热搜榜</a></h2>  
+                <h2 class="now"><a href="http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-recent30-0-0-1-1">好评榜</a></h2>  
+                <h2 ><a href="http://bang.dangdang.com/books/soaringsales/01.00.00.00.00.00-0-0-0-1-1">飙升榜</a></h2>  
+                <h2 ><a href="http://bang.dangdang.com/books/surplusbooks/01.00.00.00.00.00-recent7-0-0-1-1">特价榜</a></h2>  
+                <h2 ><a href="http://e.dangdang.com/rank_detail_page.html?listType=ddds_sale&channelType=all&timeDimension=2">电子书畅销榜</a></h2>  
+                <h2 ><a href="http://e.dangdang.com/rank_detail_page.html?listType=ddds_new&channelType=all&payType=1&timeDimension=2">电子书新书热卖榜</a></h2>  
+            </div>
+    <h1>好评榜<span>TOP100</span></h1>
+</div>        <div class="bang_content">
+            <!--bang_nav_box-->
+            <div class="bang_nav_box">
+    <div class="bang_nav" id="sortRanking">
+        <div class="side_title">分类排行</div>
+
+                <div class="side_nav" category_path="01.41.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.41.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">童书</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.43.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.43.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">中小学用书</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.03.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.03.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">小说</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.05.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.05.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">文学</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.21.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.21.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">成功/励志</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.36.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.36.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">历史</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.09.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.09.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">动漫/幽默</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.28.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.28.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">哲学/宗教</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.45.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.45.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">外语</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.31.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.31.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">心理学</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.01.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.01.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">青春文学</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.22.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.22.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">管理</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.07.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.07.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">艺术</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.18.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.18.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">保健/养生</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.15.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.15.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">亲子/家教</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.27.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.27.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">政治/军事</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.52.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.52.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">科普读物</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.30.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.30.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">社会科学</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.38.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.38.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">传记</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.32.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.32.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">古籍</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.49.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.49.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">教材</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.26.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.26.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">法律</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.25.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.25.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">经济</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.24.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.24.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">投资理财</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.54.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.54.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">计算机/网络</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.34.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.34.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">文化</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.56.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.56.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">医学</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.12.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.12.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">旅游/地图</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.47.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.47.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">考试</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.17.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.17.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">育儿/早教</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.63.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.63.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">工业技术</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.06.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.06.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">孕产/胎教</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.20.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.20.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">手工/DIY</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.10.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.10.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">烹饪/美食</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.19.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.19.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">体育/运动</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.04.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.04.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">休闲/爱好</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.50.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.50.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">工具书</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.62.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.62.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">自然科学</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.55.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.55.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">建筑</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.16.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.16.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">两性关系</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.14.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.14.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">家庭/家居</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.11.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.11.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">时尚/美妆</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+                <div class="side_nav" category_path="01.66.00.00.00.00">
+            <a href="http://bang.dangdang.com/books/fivestars/01.66.00.00.00.00-recent30-0-0-1-1" onclick="javascript:window.event.stopPropagation();">农业/林业</a><span class="icon"></span>
+        </div>
+        <ul class="side_nav_detail">
+                    </ul>
+            </div>
+    <div class="bang_nav">
+    <div class="side_title">当当图书榜</div>
+        <div class="side_nav"><a href="http://bang.dangdang.com/books/bestsellers/01.00.00.00.00.00-24hours-0-0-1-1">图书畅销榜</a></div> 
+        <div class="side_nav"><a href="http://bang.dangdang.com/books/newhotsales/01.00.00.00.00.00-24hours-0-0-1-1">新书热卖榜</a></div> 
+        <div class="side_nav"><a href="http://bang.dangdang.com/books/childrensbooks/01.41.00.00.00.00-24hours-0-0-1-1">童书榜</a></div> 
+        <div class="side_nav"><a href="http://bang.dangdang.com/books/hotbang">热搜榜</a></div> 
+        <div class="side_nav"><a href="http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-recent30-0-0-1-1">好评榜</a></div> 
+        <div class="side_nav"><a href="http://bang.dangdang.com/books/soaringsales/01.00.00.00.00.00-0-0-0-1-1">飙升榜</a></div> 
+        <div class="side_nav"><a href="http://bang.dangdang.com/books/surplusbooks/01.00.00.00.00.00-recent7-0-0-1-1">特价榜</a></div> 
+        <div class="side_nav"><a href="http://e.dangdang.com/rank_detail_page.html?listType=ddds_sale&channelType=all&timeDimension=2">电子书畅销榜</a></div> 
+        <div class="side_nav"><a href="http://e.dangdang.com/rank_detail_page.html?listType=ddds_new&channelType=all&payType=1&timeDimension=2">电子书新书热卖榜</a></div> 
+        </div>
+    <div class="bang_nav" style="display: none">
+    <div class="side_title">推荐排行</div>  
+    <div class="side_nav"><a href="http://bang.dangdang.com/music/bestSeller/">音乐畅销榜</a></div>
+    <div class="side_nav"><a href="http://bang.dangdang.com/movie/bestSeller/">影视畅销榜</a></div>
+    <div class="side_nav"><a href="http://bang.dangdang.com/mall/bestSeller/">百货畅销榜</a></div>
+    </div>
+    <!--left ads-->
+    <!-- 广告 modify-->
+<!--<div name="__AD-L" align=center style="margin-top:12px;margin-bottom:12px;width:178px; height:240px; border:1px solid #d3d3d3; overflow:hidden;"> <a target="_blank" href=""> <img src="" width="180" /></a> </div>-->
+<!-- 广告 end-->
+
+<!-- 左侧分类广告位 add chaichunyan 101103 begin -->
+<ul class="bang_list_ads">
+    <li>
+<div id="ad_cpt_11150" class=""></div><script>DD_ADSMART.fetchCPT(11150)</script>
+    </li>
+    <li>
+<div id="ad_cpt_11151" class=""></div><script>DD_ADSMART.fetchCPT(11151)</script>
+    </li>
+    <li>
+<div id="ad_cpt_11152" class=""></div><script>DD_ADSMART.fetchCPT(11152)</script>
+    </li>
+</ul>
+<!-- 左侧分类广告位 add chaichunyan 101103 end -->
+      
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var navs =$('#sortRanking').find('.side_nav');
+        var params = {"ranking_list":"fivestars","cat_path":"01.00.00.00.00.00","page":1,"page_size":20,"type":"recent30","year":0,"month":0,"range":0,"style":1,"debug":""};
+        navs.click(function(){
+            var aNav = $(this)
+            var cat3 = aNav.next();
+            if($.trim(cat3.html()) == ''){
+                params.cat_path_clicked = aNav.attr("category_path");
+                $.ajax({
+                    url: "/books/category",
+                    type: "post",
+                    contentType: "application/json",
+                    data: JSON.stringify(params),
+                    success: function(html){
+                        cat3.html(html);
+                        cat3.slideToggle();
+                        aNav.toggleClass("hover");
+                    }
+                });
+            }else{
+                cat3.slideToggle();
+                aNav.toggleClass("hover");
+            }
+
+        });
+
+        var cat_path2_prefix = "01.00.00.00.00.00".substr(0,5);
+
+        navs.each(function(){
+            var aNav = $(this);
+            if(aNav.attr("category_path").substr(0,5) == cat_path2_prefix){
+                aNav.trigger('click');
+                return false;
+            }
+        });
+    });
+</script>
+            <!--bang_list_box-->            
+            <div class="bang_list_box">
+                <script type="text/javascript">
+$(function(){
+    
+//$(".mode_btn").on('click', '.mode_btn_left', function(){
+$(".mode_btn span .mode_btn_left").live('click',  function(e){
+    var style = $(this).attr('style_css');
+//    var style = 2;
+    var url = window.location.href;
+    var hypen_pos = url.lastIndexOf('-');
+//    alert(hypen_pos);
+    if(hypen_pos>0){
+        var new_url_head = url.substring(0, parseInt(hypen_pos)-1);
+//        alert(new_url_head);
+        var new_url_tail = url.substring(hypen_pos);
+//        alert(new_url_tail);
+        var new_url = new_url_head+style+new_url_tail;
+//        alert(new_url);   
+    }else{
+        var new_url = url.replace(/(\/$)/g,"")+'/'+style+'-1';
+//        alert(new_url);         
+    }
+    window.location.href = new_url;
+    e.preventDefault();
+});
+
+$(".mode_btn span .mode_btn_right").live('click', function(e){
+    var style = $(this).attr('style_css');
+//    alert(style);
+//    var style = 2;
+    var url = window.location.href;
+    var hypen_pos = url.lastIndexOf('-');
+//    alert(hypen_pos);
+    if(hypen_pos>0){
+        var new_url_head = url.substring(0, parseInt(hypen_pos)-1);
+//        alert(new_url_head);
+        var new_url_tail = url.substring(hypen_pos);
+//        alert(new_url_tail);
+        var new_url = new_url_head+style+new_url_tail;
+//        alert(new_url);   
+    }else{
+        var new_url = url.replace(/(\/$)/g,"")+'/'+style+'-1';
+//        alert(new_url);         
+    }
+    window.location.href = new_url; 
+    e.preventDefault();
+});
+
+})    
+</script>
+
+<div class="bang_list_date">
+    
+<p><span class="left">近&nbsp;日</span>
+   <span class="date_list">
+                
+        <a href="http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-recent30-0-0-1-1" class="now">近30日</a>
+
+            </span>
+</p>
+
+
+
+ 
+<p class="last"><span class="left">往&nbsp;年</span>
+   <span class="date_list">
+                                        <a href="http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-year-2022-0-1-1" >2022年</a>
+                                    <a href="http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-year-2023-0-1-1" >2023年</a>
+                                    <a href="http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-year-2024-0-1-1" >2024年</a>
+                                    <a href="http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-year-2025-0-1-1" >2025年</a>
+                        <a href="http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-all-0-0-1-1" >累计榜</a>   
+           
+    </span>
+</p>    
+            
+        
+</div>
+                
+<div class="fanye_top">
+<div class="data"><a class="arrow_l"></a><span class="or">1</span><span>/5</span><a class="arrow_r arrow_r_on" href="javascript:loadData('2');"></a></div><script type='text/javascript'>function __g(p){if(isNaN(p) || parseInt(p)!=p || p<=0 || p>5)alert('页码必须是1-5的整数');else javascript:loadData(document.getElementById('t__cp').value);};function bindEvent(obj){obj.onkeypress=function(e){if((arguments[0] || window.event).keyCode==13)  __g(this.value);}};function loadData(page){window.location.href="/books/fivestars/01.00.00.00.00.00-recent30-0-0-1-"+parseInt(page)}</script><div class="mode_btn">
+<span class="mode_pic"><a href="javascript:;" style_css="1" class="mode_btn_left" title="大图"></a><a href="javascript:;" style_css="2" class="mode_btn_right" title="列表"></a></span>    
+</div>
+</div>
+<ul class="bang_list clearfix bang_list_mode">
+    
+    
+    <li>
+    <div class="list_num red">1.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/29984831.html" target="_blank"><img src="http://img3m1.ddimg.cn/8/31/29984831-1_l_1766041580.jpg" alt="修好这颗心（女性成长、个人成长、修身养性、修养身心）"  title="修好这颗心（女性成长、个人成长、修身养性、修养身心）"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/29984831.html" target="_blank" title="修好这颗心（女性成长、个人成长、修身养性、修养身心）">修好这颗心（女性成长、个人成长、修身养性、修养身心）</a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/29984831.html?point=comment_point" target="_blank">1020条评论</a><span class="tuijian">99.9%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=粉逍遥" title="粉逍遥" target="_blank">粉逍遥</a></div>    
+    <div class="publisher_info"><span>2025-12-01</span>&nbsp;<a href="http://search.dangdang.com/?key=中国经济出版社" target="_blank">中国经济出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>1019次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;36.80</span>
+                        <span class="price_r">&yen;59.80</span>(<span class="price_s">6.2折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('29984831');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_29984831" name="" href="javascript:showMsgBox('addto_favorlist_29984831',encodeURIComponent('29984831&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num red">2.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/29958018.html" target="_blank"><img src="http://img3m8.ddimg.cn/24/6/29958018-1_l_1766561556.jpg" alt="疗愈的彼岸:唤醒内在自我的47篇文章"  title="疗愈的彼岸:唤醒内在自我的47篇文章"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/29958018.html" target="_blank" title="疗愈的彼岸:唤醒内在自我的47篇文章">疗愈的彼岸:唤醒内在自我的47篇文章</a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/29958018.html?point=comment_point" target="_blank">528条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info">[美]<a href="http://search.dangdang.com/?key=布里安娜・威斯特" title="[美]布里安娜・威斯特（Brianna Wiest）著 苏西 译" target="_blank">布里安娜・威斯特</a>（<a href="http://search.dangdang.com/?key=Brianna" title="[美]布里安娜・威斯特（Brianna Wiest）著 苏西 译" target="_blank">Brianna</a> <a href="http://search.dangdang.com/?key=Wiest" title="[美]布里安娜・威斯特（Brianna Wiest）著 苏西 译" target="_blank">Wiest</a>）著 <a href="http://search.dangdang.com/?key=苏西" title="[美]布里安娜・威斯特（Brianna Wiest）著 苏西 译" target="_blank">苏西</a> 译</div>    
+    <div class="publisher_info"><span>2025-09-01</span>&nbsp;<a href="http://search.dangdang.com/?key=清华大学出版社" target="_blank">清华大学出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>527次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;45.50</span>
+                        <span class="price_r">&yen;65.00</span>(<span class="price_s">7.0折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('29958018');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_29958018" name="" href="javascript:showMsgBox('addto_favorlist_29958018',encodeURIComponent('29958018&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num red">3.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/29981717.html" target="_blank"><img src="http://img3m7.ddimg.cn/62/25/29981717-1_l_1766974562.jpg" alt="透过地理看中国（北京大学教授韩茂莉推荐）"  title="透过地理看中国（北京大学教授韩茂莉推荐）"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/29981717.html" target="_blank" title="透过地理看中国（北京大学教授韩茂莉推荐）">透过地理看中国（北京大学教授韩茂莉推荐）</a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/29981717.html?point=comment_point" target="_blank">495条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=史念海" title="史念海 著,博集天卷 出品" target="_blank">史念海</a> 著,<a href="http://search.dangdang.com/?key=博集天卷" title="史念海 著,博集天卷 出品" target="_blank">博集天卷</a> 出品</div>    
+    <div class="publisher_info"><span>2025-12-01</span>&nbsp;<a href="http://search.dangdang.com/?key=湖南文艺出版社" target="_blank">湖南文艺出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>495次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;34.00</span>
+                        <span class="price_r">&yen;68.00</span>(<span class="price_s">5.0折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('29981717');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_29981717" name="" href="javascript:showMsgBox('addto_favorlist_29981717',encodeURIComponent('29981717&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">4.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/29957832.html" target="_blank"><img src="http://img3m2.ddimg.cn/36/5/29957832-1_l_1765358919.jpg" alt="我与你（一本让你变得越来越好的人际关系心理学经典。武志红盛赞）"  title="我与你（一本让你变得越来越好的人际关系心理学经典。武志红盛赞）"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/29957832.html" target="_blank" title="我与你（一本让你变得越来越好的人际关系心理学经典。武志红盛赞）">我与你（一本让你变得越来越好的人际关系心理学经典。武志红盛赞<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/29957832.html?point=comment_point" target="_blank">494条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=马丁・布伯" title="马丁・布伯 著,博集天卷 出品" target="_blank">马丁・布伯</a> 著,<a href="http://search.dangdang.com/?key=博集天卷" title="马丁・布伯 著,博集天卷 出品" target="_blank">博集天卷</a> 出品</div>    
+    <div class="publisher_info"><span>2025-11-01</span>&nbsp;<a href="http://search.dangdang.com/?key=湖南文艺出版社" target="_blank">湖南文艺出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>494次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;32.30</span>
+                        <span class="price_r">&yen;49.80</span>(<span class="price_s">6.5折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('29957832');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_29957832" name="" href="javascript:showMsgBox('addto_favorlist_29957832',encodeURIComponent('29957832&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">5.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/29960637.html" target="_blank"><img src="http://img3m7.ddimg.cn/69/35/29960637-1_l_1761188362.jpg" alt="上瘾谜题（当当专供）"  title="上瘾谜题（当当专供）"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/29960637.html" target="_blank" title="上瘾谜题（当当专供）">上瘾谜题（当当专供）</a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/29960637.html?point=comment_point" target="_blank">484条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info">[日] <a href="http://search.dangdang.com/?key=白井智之" title="[日] 白井智之" target="_blank">白井智之</a></div>    
+    <div class="publisher_info"><span>2025-11-01</span>&nbsp;<a href="http://search.dangdang.com/?key=江苏凤凰文艺出版社" target="_blank">江苏凤凰文艺出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>484次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;38.40</span>
+                        <span class="price_r">&yen;59.00</span>(<span class="price_s">6.5折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('29960637');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_29960637" name="" href="javascript:showMsgBox('addto_favorlist_29960637',encodeURIComponent('29960637&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">6.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/29973519.html" target="_blank"><img src="http://img3m9.ddimg.cn/81/4/29973519-1_l_1765358673.jpg" alt="葬礼过后（《暮色将尽》作者戴安娜・阿西尔自传体小说）"  title="葬礼过后（《暮色将尽》作者戴安娜・阿西尔自传体小说）"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/29973519.html" target="_blank" title="葬礼过后（《暮色将尽》作者戴安娜・阿西尔自传体小说）">葬礼过后（《暮色将尽》作者戴安娜・阿西尔自传体小说）</a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/29973519.html?point=comment_point" target="_blank">428条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info">[英】<a href="http://search.dangdang.com/?key=戴安娜・阿西尔" title="[英】戴安娜・阿西尔 博集天卷" target="_blank">戴安娜・阿西尔</a> <a href="http://search.dangdang.com/?key=博集天卷" title="[英】戴安娜・阿西尔 博集天卷" target="_blank">博集天卷</a></div>    
+    <div class="publisher_info"><span>2025-11-30</span>&nbsp;<a href="http://search.dangdang.com/?key=湖南文艺出版社" target="_blank">湖南文艺出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>428次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;29.00</span>
+                        <span class="price_r">&yen;58.00</span>(<span class="price_s">5.0折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('29973519');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_29973519" name="" href="javascript:showMsgBox('addto_favorlist_29973519',encodeURIComponent('29973519&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">7.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/11792269041.html" target="_blank"><img src="http://img3m1.ddimg.cn/69/3/11792269041-1_l_1739088009.jpg" alt="RAZ分级阅读AA级绘本美国原版蓝标幼儿早教英语点读支持小达人小蝌蚪易趣点读笔"  title="RAZ分级阅读AA级绘本美国原版蓝标幼儿早教英语点读支持小达人小蝌蚪易趣点读笔"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/11792269041.html" target="_blank" title="RAZ分级阅读AA级绘本美国原版蓝标幼儿早教英语点读支持小达人小蝌蚪易趣点读笔">RAZ分级阅读AA级绘本美国原版蓝标幼儿早教英语点读支持小达人小蝌<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/11792269041.html?point=comment_point" target="_blank">1559条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=MAGIC" title="MAGIC HORSE" target="_blank">MAGIC</a> <a href="http://search.dangdang.com/?key=HORSE" title="MAGIC HORSE" target="_blank">HORSE</a></div>    
+    <div class="publisher_info"><span>2024-06-04</span>&nbsp;<a href="http://search.dangdang.com/?key=少年儿童出版社" target="_blank">少年儿童出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>622次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;88.00</span>
+                        <span class="price_r">&yen;399.00</span>(<span class="price_s">2.2折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('11792269041');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_11792269041" name="" href="javascript:showMsgBox('addto_favorlist_11792269041',encodeURIComponent('11792269041&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">8.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/11793038401.html" target="_blank"><img src="http://img3m1.ddimg.cn/1/22/11793038401-1_l_1751873315.jpg" alt="1000 2000 4000  Basic English Words 全套KET核心词汇教材常见词英语 小学英语常见词英语单词词典剑桥雅思核心词汇大全（高清印刷版）不带账号含音频"  title="1000 2000 4000  Basic English Words 全套KET核心词汇教材常见词英语 小学英语常见词英语单词词典剑桥雅思核心词汇大全（高清印刷版）不带账号含音频"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/11793038401.html" target="_blank" title="1000 2000 4000  Basic English Words 全套KET核心词汇教材常见词英语 小学英语常见词英语单词词典剑桥雅思核心词汇大全（高清印刷版）不带账号含音频">1000 2000 4000  Basic English Words 全套KET核心词汇教材常见词<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/11793038401.html?point=comment_point" target="_blank">1216条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=Kelli" title="Kelli Ripatti" target="_blank">Kelli</a> <a href="http://search.dangdang.com/?key=Ripatti" title="Kelli Ripatti" target="_blank">Ripatti</a></div>    
+    <div class="publisher_info"><span></span>&nbsp;<a href="http://search.dangdang.com/?key=Compass Publishing" target="_blank">Compass Publishing</a></div>    
+
+            <div class="biaosheng">五星评分：<span>770次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;688.00</span>
+                        <span class="price_r">&yen;2,494.72</span>(<span class="price_s">2.8折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('11793038401');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_11793038401" name="" href="javascript:showMsgBox('addto_favorlist_11793038401',encodeURIComponent('11793038401&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">9.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/11782136816.html" target="_blank"><img src="http://img3m6.ddimg.cn/98/6/11782136816-1_l_1721534753.jpg" alt="RAZ分级阅读绘本美国原版蓝标H+I+J 3个级别  幼儿早教英语支持点读支持小达人小蝌蚪易趣点读笔"  title="RAZ分级阅读绘本美国原版蓝标H+I+J 3个级别  幼儿早教英语支持点读支持小达人小蝌蚪易趣点读笔"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/11782136816.html" target="_blank" title="RAZ分级阅读绘本美国原版蓝标H+I+J 3个级别  幼儿早教英语支持点读支持小达人小蝌蚪易趣点读笔">RAZ分级阅读绘本美国原版蓝标H+I+J 3个级别  幼儿早教英语支持点<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/11782136816.html?point=comment_point" target="_blank">370条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=MAGIC" title="MAGIC HORSE" target="_blank">MAGIC</a> <a href="http://search.dangdang.com/?key=HORSE" title="MAGIC HORSE" target="_blank">HORSE</a></div>    
+    <div class="publisher_info"><span>2022-07-05</span>&nbsp;<a href="http://search.dangdang.com/?key=少年儿童出版社" target="_blank">少年儿童出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>134次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;418.00</span>
+                        <span class="price_r">&yen;999.00</span>(<span class="price_s">4.2折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('11782136816');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_11782136816" name="" href="javascript:showMsgBox('addto_favorlist_11782136816',encodeURIComponent('11782136816&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">10.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/29996073.html" target="_blank"><img src="http://img3m3.ddimg.cn/63/25/29996073-1_l_1766972535.jpg" alt="跨山越海"  title="跨山越海"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/29996073.html" target="_blank" title="跨山越海">跨山越海</a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/29996073.html?point=comment_point" target="_blank">117条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=李海峰" title="李海峰,陈杰平,梁华铨" target="_blank">李海峰</a>,<a href="http://search.dangdang.com/?key=陈杰平" title="李海峰,陈杰平,梁华铨" target="_blank">陈杰平</a>,<a href="http://search.dangdang.com/?key=梁华铨" title="李海峰,陈杰平,梁华铨" target="_blank">梁华铨</a></div>    
+    <div class="publisher_info"><span>2026-01-01</span>&nbsp;<a href="http://search.dangdang.com/?key=华中科技大学出版社" target="_blank">华中科技大学出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>119次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;39.60</span>
+                        <span class="price_r">&yen;55.00</span>(<span class="price_s">7.2折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_29996073" name="" href="javascript:showMsgBox('addto_favorlist_29996073',encodeURIComponent('29996073&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">11.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/29988702.html" target="_blank"><img src="http://img3m2.ddimg.cn/18/17/29988702-1_l_1766731684.jpg" alt="我在哪里，幸福就在哪里"  title="我在哪里，幸福就在哪里"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/29988702.html" target="_blank" title="我在哪里，幸福就在哪里">我在哪里，幸福就在哪里</a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/29988702.html?point=comment_point" target="_blank">95条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=李海峰" title="李海峰，林嘉怡" target="_blank">李海峰</a>，<a href="http://search.dangdang.com/?key=林嘉怡" title="李海峰，林嘉怡" target="_blank">林嘉怡</a></div>    
+    <div class="publisher_info"><span>2026-01-01</span>&nbsp;<a href="http://search.dangdang.com/?key=北京日报出版社" target="_blank">北京日报出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>95次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;34.00</span>
+                        <span class="price_r">&yen;68.00</span>(<span class="price_s">5.0折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('29988702');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_29988702" name="" href="javascript:showMsgBox('addto_favorlist_29988702',encodeURIComponent('29988702&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">12.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/12380002707.html" target="_blank"><img src="http://img3m7.ddimg.cn/39/28/12380002707-1_l_1754640661.jpg" alt="【廖彩杏第一阶段13册 】廖彩杏书单130本 第一二阶段英文版绘本支持小达人易趣点读"  title="【廖彩杏第一阶段13册 】廖彩杏书单130本 第一二阶段英文版绘本支持小达人易趣点读"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/12380002707.html" target="_blank" title="【廖彩杏第一阶段13册 】廖彩杏书单130本 第一二阶段英文版绘本支持小达人易趣点读">【廖彩杏第一阶段13册 】廖彩杏书单130本 第一二阶段英文版绘本支<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/12380002707.html?point=comment_point" target="_blank">397条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info">。</div>    
+    <div class="publisher_info"><span></span>&nbsp;<a href="http://search.dangdang.com/?key=？" target="_blank">？</a></div>    
+
+            <div class="biaosheng">五星评分：<span>167次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;129.00</span>
+                        <span class="price_r">&yen;199.00</span>(<span class="price_s">6.5折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('12380002707');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_12380002707" name="" href="javascript:showMsgBox('addto_favorlist_12380002707',encodeURIComponent('12380002707&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">13.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/12380477147.html" target="_blank"><img src="http://img3m7.ddimg.cn/71/17/12380477147-1_l_1764924178.jpg" alt="【原版B级 】 raz分级阅读绘本美国原版aa英语启蒙小学生易趣点读笔a8官方正版蓝标正品英语幼儿启蒙支持小达人易趣小蝌蚪点读笔"  title="【原版B级 】 raz分级阅读绘本美国原版aa英语启蒙小学生易趣点读笔a8官方正版蓝标正品英语幼儿启蒙支持小达人易趣小蝌蚪点读笔"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/12380477147.html" target="_blank" title="【原版B级 】 raz分级阅读绘本美国原版aa英语启蒙小学生易趣点读笔a8官方正版蓝标正品英语幼儿启蒙支持小达人易趣小蝌蚪点读笔">【原版B级 】 raz分级阅读绘本美国原版aa英语启蒙小学生易趣点读<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/12380477147.html?point=comment_point" target="_blank">130条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"></div>    
+    <div class="publisher_info"><span></span>&nbsp;<a href="http://search.dangdang.com/?key=不详" target="_blank">不详</a></div>    
+
+            <div class="biaosheng">五星评分：<span>110次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;165.00</span>
+                        <span class="price_r">&yen;399.00</span>(<span class="price_s">4.1折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('12380477147');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_12380477147" name="" href="javascript:showMsgBox('addto_favorlist_12380477147',encodeURIComponent('12380477147&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">14.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/12380476887.html" target="_blank"><img src="http://img3m7.ddimg.cn/9/16/12380476887-1_l_1766494496.jpg" alt="【正版AA级 】 raz分级阅读绘本美国原版进口aa英语启蒙小学生易趣点读笔a8官方正版蓝标正品英语幼儿启蒙支持小达人易趣小蝌蚪点读笔"  title="【正版AA级 】 raz分级阅读绘本美国原版进口aa英语启蒙小学生易趣点读笔a8官方正版蓝标正品英语幼儿启蒙支持小达人易趣小蝌蚪点读笔"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/12380476887.html" target="_blank" title="【正版AA级 】 raz分级阅读绘本美国原版进口aa英语启蒙小学生易趣点读笔a8官方正版蓝标正品英语幼儿启蒙支持小达人易趣小蝌蚪点读笔">【正版AA级 】 raz分级阅读绘本美国原版进口aa英语启蒙小学生易趣<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/12380476887.html?point=comment_point" target="_blank">270条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=不详" title="不详" target="_blank">不详</a></div>    
+    <div class="publisher_info"><span></span>&nbsp;<a href="http://search.dangdang.com/?key=不详" target="_blank">不详</a></div>    
+
+            <div class="biaosheng">五星评分：<span>111次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;158.00</span>
+                        <span class="price_r">&yen;399.00</span>(<span class="price_s">4.0折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('12380476887');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_12380476887" name="" href="javascript:showMsgBox('addto_favorlist_12380476887',encodeURIComponent('12380476887&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">15.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/12380328587.html" target="_blank"><img src="http://img3m7.ddimg.cn/11/12/12380328587-1_l_1762774585.jpg" alt="【【官方蓝标C级】103本＋2本导读练习册 官方标配 】 官方蓝标RAZ儿童分级阅读绘本加厚版英语幼儿启蒙易趣点读笔"  title="【【官方蓝标C级】103本＋2本导读练习册 官方标配 】 官方蓝标RAZ儿童分级阅读绘本加厚版英语幼儿启蒙易趣点读笔"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/12380328587.html" target="_blank" title="【【官方蓝标C级】103本＋2本导读练习册 官方标配 】 官方蓝标RAZ儿童分级阅读绘本加厚版英语幼儿启蒙易趣点读笔">【【官方蓝标C级】103本＋2本导读练习册 官方标配 】 官方蓝标RA<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/12380328587.html?point=comment_point" target="_blank">98条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=不详" title="不详" target="_blank">不详</a></div>    
+    <div class="publisher_info"><span></span>&nbsp;<a href="http://search.dangdang.com/?key=不详" target="_blank">不详</a></div>    
+
+            <div class="biaosheng">五星评分：<span>78次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;168.00</span>
+                        <span class="price_r">&yen;197.00</span>(<span class="price_s">8.5折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('12380328587');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_12380328587" name="" href="javascript:showMsgBox('addto_favorlist_12380328587',encodeURIComponent('12380328587&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">16.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/11792272901.html" target="_blank"><img src="http://img3m1.ddimg.cn/68/15/11792272901-1_l_1754726644.jpg" alt="RAZ分级阅读A级绘本美国原版蓝标幼儿早教英语点读小达人小蝌蚪易趣点读笔"  title="RAZ分级阅读A级绘本美国原版蓝标幼儿早教英语点读小达人小蝌蚪易趣点读笔"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/11792272901.html" target="_blank" title="RAZ分级阅读A级绘本美国原版蓝标幼儿早教英语点读小达人小蝌蚪易趣点读笔">RAZ分级阅读A级绘本美国原版蓝标幼儿早教英语点读小达人小蝌蚪易<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/11792272901.html?point=comment_point" target="_blank">1748条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=MAGIC" title="MAGIC HORSE" target="_blank">MAGIC</a> <a href="http://search.dangdang.com/?key=HORSE" title="MAGIC HORSE" target="_blank">HORSE</a></div>    
+    <div class="publisher_info"><span>2024-05-28</span>&nbsp;<a href="http://search.dangdang.com/?key=11" target="_blank">11</a></div>    
+
+            <div class="biaosheng">五星评分：<span>427次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;98.00</span>
+                        <span class="price_r">&yen;399.00</span>(<span class="price_s">2.5折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('11792272901');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_11792272901" name="" href="javascript:showMsgBox('addto_favorlist_11792272901',encodeURIComponent('11792272901&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">17.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/11792274451.html" target="_blank"><img src="http://img3m1.ddimg.cn/34/11/11792274451-1_l_1753604783.jpg" alt="RAZ分级阅读B级绘本美国原版蓝标幼儿早教英语点读小达人小蝌蚪易趣点读笔"  title="RAZ分级阅读B级绘本美国原版蓝标幼儿早教英语点读小达人小蝌蚪易趣点读笔"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/11792274451.html" target="_blank" title="RAZ分级阅读B级绘本美国原版蓝标幼儿早教英语点读小达人小蝌蚪易趣点读笔">RAZ分级阅读B级绘本美国原版蓝标幼儿早教英语点读小达人小蝌蚪易<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/11792274451.html?point=comment_point" target="_blank">1630条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=MAGIC" title="MAGIC HORSE" target="_blank">MAGIC</a> <a href="http://search.dangdang.com/?key=HORSE" title="MAGIC HORSE" target="_blank">HORSE</a></div>    
+    <div class="publisher_info"><span>2024-06-04</span>&nbsp;<a href="http://search.dangdang.com/?key=少年儿童出版社" target="_blank">少年儿童出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>358次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;116.00</span>
+                        <span class="price_r">&yen;399.00</span>(<span class="price_s">2.9折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('11792274451');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_11792274451" name="" href="javascript:showMsgBox('addto_favorlist_11792274451',encodeURIComponent('11792274451&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">18.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/12425929917.html" target="_blank"><img src="http://img3m7.ddimg.cn/60/26/12425929917-1_l_1766497121.jpg" alt="【【蓝风铃的来信】桂瑞/奇文 】 全新爆款TF四代桂瑞/奇文小说 春心动 蓝风铃的来信/暧昧粉蓝全册（高清印刷版）"  title="【【蓝风铃的来信】桂瑞/奇文 】 全新爆款TF四代桂瑞/奇文小说 春心动 蓝风铃的来信/暧昧粉蓝全册（高清印刷版）"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/12425929917.html" target="_blank" title="【【蓝风铃的来信】桂瑞/奇文 】 全新爆款TF四代桂瑞/奇文小说 春心动 蓝风铃的来信/暧昧粉蓝全册（高清印刷版）">【【蓝风铃的来信】桂瑞/奇文 】 全新爆款TF四代桂瑞/奇文小说 春<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/12425929917.html?point=comment_point" target="_blank">58条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"></div>    
+    <div class="publisher_info"><span></span>&nbsp;<a href="http://search.dangdang.com/?key=安徽大学出版社" target="_blank">安徽大学出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>58次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;33.90</span>
+                        <span class="price_r">&yen;69.00</span>(<span class="price_s">4.9折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('12425929917');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_12425929917" name="" href="javascript:showMsgBox('addto_favorlist_12425929917',encodeURIComponent('12425929917&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">19.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/29984522.html" target="_blank"><img src="http://img3m2.ddimg.cn/95/18/29984522-1_l_1765421740.jpg" alt="家长早知道：这样和班主任沟通更有效 告别“见老师恐惧症”，一本书让您成为班主任眼中的“神队友” 当当自营"  title="家长早知道：这样和班主任沟通更有效 告别“见老师恐惧症”，一本书让您成为班主任眼中的“神队友” 当当自营"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/29984522.html" target="_blank" title="家长早知道：这样和班主任沟通更有效 告别“见老师恐惧症”，一本书让您成为班主任眼中的“神队友” 当当自营">家长早知道：这样和班主任沟通更有效 告别“见老师恐惧症”，一本<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/29984522.html?point=comment_point" target="_blank">51条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"><a href="http://search.dangdang.com/?key=俞美清" title="俞美清 著" target="_blank">俞美清</a> 著</div>    
+    <div class="publisher_info"><span>2025-11-01</span>&nbsp;<a href="http://search.dangdang.com/?key=北京理工大学出版社" target="_blank">北京理工大学出版社</a></div>    
+
+            <div class="biaosheng">五星评分：<span>51次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;38.40</span>
+                        <span class="price_r">&yen;59.00</span>(<span class="price_s">6.5折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('29984522');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_29984522" name="" href="javascript:showMsgBox('addto_favorlist_29984522',encodeURIComponent('29984522&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+    <li>
+    <div class="list_num ">20.</div>   
+    <div class="pic"><a href="http://product.dangdang.com/12379787667.html" target="_blank"><img src="http://img3m7.ddimg.cn/27/32/12379787667-1_l_1765890884.jpg" alt="【go dog go 】 Where is the green sheep Dear zoo晓华亲子英语第一阶段书单（高清印刷版）"  title="【go dog go 】 Where is the green sheep Dear zoo晓华亲子英语第一阶段书单（高清印刷版）"/></a></div>    
+    <div class="name"><a href="http://product.dangdang.com/12379787667.html" target="_blank" title="【go dog go 】 Where is the green sheep Dear zoo晓华亲子英语第一阶段书单（高清印刷版）">【go dog go 】 Where is the green sheep Dear zoo晓华亲子英语<span class='dot'>...</span></a></div>    
+    <div class="star"><span class="level"><span style="width: 100%;"></span></span><a href="http://product.dangdang.com/12379787667.html?point=comment_point" target="_blank">142条评论</a><span class="tuijian">100%推荐</span></div>    
+    <div class="publisher_info"></div>    
+    <div class="publisher_info"><span></span>&nbsp;<a href="http://search.dangdang.com/?key=1" target="_blank">1</a></div>    
+
+            <div class="biaosheng">五星评分：<span>83次</span></div>
+                      
+    
+    <div class="price">        
+        <p><span class="price_n">&yen;18.90</span>
+                        <span class="price_r">&yen;19.50</span>(<span class="price_s">9.7折</span>)
+                    </p>
+                    <p class="price_e"></p>
+                <div class="buy_button">
+                          <a ddname="加入购物车" name="" href="javascript:AddToShoppingCart('12379787667');" class="listbtn_buy">加入购物车</a>
+                        
+                        <a ddname="加入收藏" id="addto_favorlist_12379787667" name="" href="javascript:showMsgBox('addto_favorlist_12379787667',encodeURIComponent('12379787667&platform=3'), 'http://myhome.dangdang.com/addFavoritepop');" class="listbtn_collect">收藏</a>
+     
+        </div>
+
+    </div>
+  
+    </li>    
+    
+</ul>
+<!--paginating-->
+<div class="paginating"><ul class="paging" name="Fy"><li class="prev none"><a href="javascript:void(0);" class="fanye_page fanye_none">上一页</a></li><li><a href="javascript:loadData('1');" class="current">1</a></li><li><a href="javascript:loadData('2');">2</a></li><li><a href="javascript:loadData('3');">3</a></li><li><a href="javascript:loadData('4');">4</a></li><li><a href="javascript:loadData('5');">5</a></li><li class="next"><a href="javascript:loadData('2');">下一页</a></li><li class="page_input"><span>到第</span><input id="t__cp" type="text" class="number number_hover" value='1'>
+                    <span>页</span><input class="button" id="click_get_page" value="确定" type="button" onclick="javascript:__g(document.getElementById('t__cp').value)"></li></ul></div><script type='text/javascript'>function __g(p){if(isNaN(p) || parseInt(p)!=p || p<=0 || p>5)alert('页码必须是1-5的整数');else javascript:loadData(document.getElementById('t__cp').value);};function bindEvent(obj){obj.onkeypress=function(e){if((arguments[0] || window.event).keyCode==13)  __g(this.value);}};function loadData(page){window.location.href="/books/fivestars/01.00.00.00.00.00-recent30-0-0-1-"+parseInt(page)}</script>
+            </div> 
+        </div>
+        
+    </div>
+    <div class="fixedbar">
+        <a href="javascript:scroll(0,0)"></a>
+    </div>    
+    <!--预留footer区-->
+        <div id="footer">
+	<link href="//static.dangdang.com/css/header2012/footer_150526.css?20170626" rel="stylesheet" type="text/css">
+	<style>.footer_copyright img {display: inline;}.footer_ad_img{width:auto;height:52px;}.footer_link_img {width: auto;height: 47px;}.footer_ad_new_inner{display: flex;align-items: center;justify-content: center;gap: 50px;}.footer_ad_new_inner a {margin: 12px 0;}</style>
+	<div class="footer" dd_name="页尾">
+	        <!--页尾广告 -->
+							<div class="footer_pic_new">
+					<div class="footer_ad_new_inner">
+
+								<a name="foot_1" href="http://help.dangdang.com/details/page13" target="_blank" class="footer_img"><img class="footer_ad_img" src="https://platform-permanent.ddimg.cn/pt-front-cms-upload-file/2025/12/18/2025121818204782872.png"></img></a>
+								<a name="foot_2" href="http://help.dangdang.com/details/page16" target="_blank" class="footer_img"><img class="footer_ad_img" src="https://platform-permanent.ddimg.cn/pt-front-cms-upload-file/2025/12/18/2025121818204823486.png"></img></a>
+								<a name="foot_3" href="http://help.dangdang.com/details/page28" target="_blank" class="footer_img"><img class="footer_ad_img" src="https://platform-permanent.ddimg.cn/pt-front-cms-upload-file/2025/12/18/202512181820475322.png"></img></a>
+
+					</div>
+				</div>
+				<!--帮助中心的模版 -->
+				<div class="public_footer_new" style="display: flex;justify-content: center;gap: 20px;padding: 10px 0 20px 0;width: auto;min-height: 140px;height:auto">
+
+							<div class="footer_sort footer_nvice" style="float: none;width: auto;">
+								<span class="f_title">购物指南</span>
+								<ul>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page2" target="_blank" class="main" rel="nofollow">购买流程</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page6" target="_blank"  rel="nofollow">发票制度</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page12" target="_blank"  rel="nofollow">服务协议</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page8" target="_blank"  rel="nofollow">会员优惠</a></li>
+								</ul>
+							</div>
+							<div class="footer_sort footer_nvice" style="float: none;width: auto;">
+								<span class="f_title">支付方式</span>
+								<ul>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page22" target="_blank" class="main" rel="nofollow">网上支付</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page24" target="_blank"  rel="nofollow">礼品卡支付</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page23" target="_blank"  rel="nofollow">银行转账</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page25" target="_blank"  rel="nofollow">礼券支付</a></li>
+								</ul>
+							</div>
+							<div class="footer_sort footer_nvice" style="float: none;width: auto;">
+								<span class="f_title">订单服务</span>
+								<ul>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page400" target="_blank" class="main" rel="nofollow">配送服务查询</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page4" target="_blank"  rel="nofollow">订单状态说明</a></li>
+										<li><a name="foot_gouwu" href="http://myhome.dangdang.com/myOrder" target="_blank"  rel="nofollow">自助取消订单</a></li>
+										<li><a name="foot_gouwu" href="http://myhome.dangdang.com/myOrder" target="_blank"  rel="nofollow">自助修改订单</a></li>
+								</ul>
+							</div>
+							<div class="footer_sort footer_nvice" style="float: none;width: auto;">
+								<span class="f_title">配送方式</span>
+								<ul>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page232" target="_blank" class="main" rel="nofollow">当日递</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page233" target="_blank"  rel="nofollow">次日达</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page500" target="_blank"  rel="nofollow">订单自提</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page20" target="_blank"  rel="nofollow">验货与签收</a></li>
+								</ul>
+							</div>
+							<div class="footer_sort footer_nvice" style="float: none;width: auto;">
+								<span class="f_title">退换货</span>
+								<ul>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page28" target="_blank" class="main" rel="nofollow">退换货服务查询</a></li>
+										<li><a name="foot_gouwu" href="http://return.dangdang.com/reverseapplyselect.aspx" target="_blank"  rel="nofollow">自助申请退换货</a></li>
+										<li><a name="foot_gouwu" href="http://return.dangdang.com/reverseapplylist.aspx" target="_blank"  rel="nofollow">退换货进度查询</a></li>
+										<li><a name="foot_gouwu" href="http://help.dangdang.com/details/page31" target="_blank"  rel="nofollow">退款方式和时间</a></li>
+								</ul>
+							</div>
+							<div class="footer_sort footer_nvice" style="float: none;width: auto;">
+								<span class="f_title">商家服务</span>
+								<ul>
+										<li><a name="foot_gouwu" href="http://shop.dangdang.com/shangjia" target="_blank" class="main" rel="nofollow">商家中心</a></li>
+										<li><a name="foot_gouwu" href="http://outlets.dangdang.com/merchants_cooperation" target="_blank"  rel="nofollow">运营服务</a></li>
+								</ul>
+							</div>
+				</div>
+
+		<div class="footer_nav_box">
+
+						<div class="footer_nav" style="padding-bottom: 0;">
+								<a href="http://t.dangdang.com/companyInfo" target="_blank" rel="nofollow">公司简介</a>
+								<span class="sep">|</span>
+								<a href="https://union.dangdang.com/" target="_blank" rel="nofollow">网站联盟</a>
+								<span class="sep">|</span>
+								<a href="http://outlets.dangdang.com/merchants_open" target="_blank" rel="nofollow">当当招商</a>
+								<span class="sep">|</span>
+								<a href="http://b2b.dangdang.com/ddRegistered?custId=2c21d394a078586625dec5580df4f63f&sid=pc_98735b14bad55caea349809381b6f78b3e4a0196fd574b70356e84727b559d46" target="_blank" rel="nofollow">机构销售</a>
+								<span class="sep">|</span>
+								<a href="http://t.dangdang.com/20130220_ydmr" target="_blank" rel="nofollow">手机当当</a>
+								<span class="sep">|</span>
+								<a href="http://blog.dangdang.com/" target="_blank" rel="nofollow">官方Blog</a>
+								<span class="sep">|</span>
+								<a href="http://t.dangdang.com/intellectualProperty" target="_blank" rel="nofollow"> 知识产权 </a>
+								<span class="sep">|</span>
+								<a href="http://www.dangdang.com/" target="_blank" rel="nofollow">热词搜索</a>
+								
+						</div>
+
+
+				<div class="footer_copyright">
+						<div class="footer_copyright" style="padding: 10px 0px 0px; margin: 0px auto; float: none; width: 960px; text-align: center; color: #8c8c8c; line-height: 20px; font-family: 'Microsoft YaHei'; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="display: inline-block; float: none;">Copyright 2004 - 2024 当当网. All Rights Reserved</span></div>
+<div class="footer_copyright" style="padding: 10px 0px 0px; margin: 0px auto; float: none; width: 960px; text-align: center; color: #8c8c8c; line-height: 20px; font-family: 'Microsoft YaHei'; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="display: inline-block; float: none;">京ICP证041189号</span><span class="sep" style="display: inline-block; float: none; margin: 0px 17px 0px 19px;">|</span><a style="color: #8c8c8c; text-decoration: none; font-size: 12px; padding: 0px 4px;" href="https://img63.ddimg.cn/2022/6/20/2022062015355773458.jpg" target="_blank" rel="noopener"><span style="display: inline-block; float: none;">出版物经营许可证 新出发京批字第直0673号</span></a><span class="sep" style="display: inline-block; float: none; margin: 0px 17px 0px 19px;">|</span><a style="color: #8c8c8c; text-decoration: none; font-size: 12px; padding: 0px 4px;" href="https://img62.ddimg.cn/upload_img/00790/myoder/2spzgz-1620734062.jpg" target="_blank" rel="noopener"><span style="display: inline-block; float: none;">食品经营许可证：JY11101050363440</span></a><br><a style="color: #8c8c8c; text-decoration: none; font-size: 12px; padding: 0px 4px;" href="http://beian.miit.gov.cn/" target="_blank" rel="noopener"><span style="display: inline-block; float: none;">京ICP备17043473号-1</span></a><span class="sep" style="display: inline-block; float: none; margin: 0px 17px 0px 19px;">|</span><a style="color: #8c8c8c; text-decoration: none; font-size: 12px; padding: 0px 4px;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037644" target="_blank" rel="noopener"><img style="margin: 0px; padding: 0px; list-style-type: none; border: 0px; font-size: 12px; vertical-align: middle;" src="https://img60.ddimg.cn/assets/pc_image/jinggongwanganbei.png" alt="京公网安备 11010502037644号"><span style="display: inline-block; float: none; margin-left: 5px;">京公网安备11010502037644号</span></a><span class="sep" style="display: inline-block; float: none; margin: 0px 17px 0px 19px;">|</span><a style="color: #8c8c8c; text-decoration: none; font-size: 12px; padding: 0px 4px;" href="https://img63.ddimg.cn/upload_img/00790/wuxian/TJICP-1638451281.jpg" target="_blank" rel="noopener"><span style="display: inline-block; float: none;">经营许可证编号：合字B2-20160011</span></a><span class="sep" style="display: inline-block; float: none; margin: 0px 17px 0px 19px;">|</span><a style="color: #8c8c8c; text-decoration: none; font-size: 12px; padding: 0px 4px;" href="https://img63.ddimg.cn/upload_img/00753/123/123-1589788783.jpg" target="_blank" rel="noopener"><span style="display: inline-block; float: none;">互联网药品信息服务资格证</span></a><br><span style="display: inline-block; float: none;">互联网违法和不良信息举报电话：4001066666-5，涉未成年举报电话：4001066666-9，邮箱：<a style="color: #8c8c8c; text-decoration: none; font-size: 12px; padding: 0px 4px;" href="mailto:jubao@dangdang.com">jubao@dangdang.com</a></span><br><span style="display: inline-block; float: none;"><a style="color: #8c8c8c; text-decoration: none; font-size: 12px; padding: 0px 4px;" href="https://img62.ddimg.cn/upload_img/00753/123/2-1592548881.jpg" target="_blank" rel="noopener">北京当当科文电子商务有限公司</a>，通信地址：北京市东城区藏经馆胡同17号1幢A103室</span></div>
+				</div>
+
+
+				<div class="footer_icon footer_icon2" style="padding-left:20px;width: 100%;display: flex;align-items: center;justify-content: center;gap: 20px;padding-top: 20px;box-sizing: border-box;">
+
+							<div class="logo3">
+									<a href="http://www.dangdang.com/" target="_blank">
+										<img class="footer_link_img" src="http://img61.ddimg.cn/7d593c48-48f6-4fc9-85e0-7d6e10dfc2a2.hpvgUvc9" alt="友情链接">
+									</a>
+							</div>
+							<div class="logo4">
+									<a href="https://www.pinganzhengxin.com/" target="_blank">
+										<img class="footer_link_img" src="http://img63.ddimg.cn/upload_img/00111/home/brand_128_47.png" alt="友情链接">
+									</a>
+							</div>
+							<div class="logo5">
+									<a href="https://www.12377.cn/" target="_blank">
+										<img class="footer_link_img" src="http://img60.ddimg.cn/upload_img/00459/home/hlwjbzx_182.png" alt="友情链接">
+									</a>
+							</div>
+							<div class="logo6">
+									<a href="http://adadm.dangdang.com/login.php" target="_blank">
+										<img class="footer_link_img" src="http://img60.ddimg.cn/upload_img/00459/home/cnnic.png" alt="友情链接">
+									</a>
+							</div>
+							<div class="logo7">
+									<a href="http://www.dangdang.com/" target="_blank">
+										<img class="footer_link_img" src="http://img61.ddimg.cn/ddimg/1462/acc2_icon_06-1642647403.jpg" alt="友情链接">
+									</a>
+							</div>
+
+					<div class="clear"></div>
+				</div>
+
+
+		</div>
+
+	</div>
+</div>
+
+<div id="footer_end"></div>
+<!--CreateDate  2026-01-05 16:30:01-->    <div class="foot_tip_ad">广告</div>
+    <style>
+        .foot_tip_ad { width:40px; height:40px; font:12px/40px "simsun"; text-align:center; color:#fff; background-color:#474747; position:fixed; right:0; bottom:10px;_position:absolute; _bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+    </style>
+<script src="//static.dangdang.com/js/login/check_snbrowse.js?20260105" type="text/javascript"></script>
+<script  type="text/javascript">login_session.browsePageOperate();</script>
+<script type="text/javascript" src="//click.dangdang.com/js_tracker.js?20260105"></script>
+<script type="text/javascript" src="//databack.dangdang.com/collect.js?20260105"></script>
+<script type="text/javascript" src="//databack.dangdang.com/store.js?20260105"></script>
+
+<!-- 页尾 begin --><!--  --><!-- 页尾 end -->
+<script type="text/javascript">
+$(document).ready(function(){  
+$(".bang_list li").mouseover(function(){$(this).addClass("hover");})  
+.mouseout(function(){$(this).removeClass("hover");});
+
+});  
+</script>    
+    
+        </body>
+</html>
