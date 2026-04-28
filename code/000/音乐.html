@@ -1,0 +1,2494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>个人主站</title>
+    <link rel="icon" href="/img/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas#cursor-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            pointer-events: none;
+        }
+
+        html {
+            cursor: url(./img/pointer24px.ico), auto;
+        }
+
+        .center {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 99;
+        }
+
+        a {
+            color: #999999;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .inBase {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 32px;
+            padding-top: 15px;
+            background-color: #f5f5f5;
+            text-align: center;
+            font-size: 15px;
+            color: #999;
+            z-index: 99;
+        }
+
+        #canvas {
+            display: block;
+            background: linear-gradient(#ffffff, #ffffff);
+            width: 100%;
+            z-index: -1;
+        }
+
+        #color-bar-left {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 100%;
+            background-color: #1a87f3;
+            transition: width 0.3s ease
+        }
+
+        #color-bar-right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 30px;
+            height: 100%;
+            background-color: #1a87f3;
+            transition: width 0.3s ease
+        }
+
+        #color-bar-left:hover,
+        #color-bar-right:hover {
+            width: 70px;
+            background-color: #117fee;
+        }
+
+        @media (max-width: 768px) {
+            #footer {
+                font-size: 12px;
+                padding: 5px 0;
+                z-index: 99;
+            }
+        }
+
+        .volume-slider {
+            position: relative;
+            top: -150px;
+            width: 200px;
+            height: 10px;
+            margin: 20px auto;
+            background-color: #ccc;
+            border-radius: 5px;
+        }
+
+        .slider-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+
+        .slider-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #1e90ff;
+            border-radius: 5px;
+        }
+
+        .slider-handle {
+            position: absolute;
+            top: -5px;
+            left: calc(50%);
+            width: 20px;
+            height: 20px;
+            background-color: #1e90ff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #prevBtn,
+        #nextBtn {
+            position: relative;
+            top: 45px;
+            background-color: #ffffff;
+            border: 2px solid #e0e4e9;
+            color: #1e90ff;
+            padding: 3px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 7px;
+            cursor: pointer;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        #prevBtn:active,
+        #nextBtn:active {
+            filter: brightness(70%);
+        }
+
+        #timer {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            font-size: 20px;
+            color: rgba(30, 144, 255);
+            z-index: 99;
+        }
+
+        .hidden {
+            position: absolute;
+            left: 25%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            color: #7FFF00;
+        }
+
+        .visible {
+            position: absolute;
+            right: 25%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            color: #7FFF00;
+        }
+
+        .tip{
+            font-size: 14px;
+            color: #999999;
+            margin-bottom: 5px
+        }
+    </style>
+
+<body>
+    <div id="timer">00:00:00</div>
+    <div class="center">
+        <div class="volume-slider">
+            <div class="slider-bg"></div>
+            <div class="slider-progress"></div>
+            <div class="slider-handle"></div>
+        </div>
+        <p>
+            请点击前往&nbsp;<a class="inBase" href="http://119.29.206.197:8081" target="_blank">主站</a>&nbsp;学习，可将当前网页作为后台
+        </p>
+        <p>24小时持续运行</p>
+        <p>双击页面 ==> 暂停|播放</p>
+        <button id="prevBtn" onclick="prevSong()">上一首</button>
+        <button id="nextBtn" onclick="nextSong()">下一首</button>
+    </div>
+    <div id="footer">
+        <div id="color-bar-left">
+            <span class="hidden">隐藏</span>
+        </div>
+        <a href="https://beian.miit.gov.cn/" style="height: 100%;">备案号: 粤ICP备2023141895号-2</a>
+        <div id="color-bar-right">
+            <span class="visible">显示</span>
+        </div>
+    </div>
+    <audio id="myaudio" src=""></audio>
+    <canvas id="canvas"></canvas>
+
+<script>
+		window.onload = ((function() {
+			var callbacks = []
+			  , timeLimit = 50
+			  , open = false;
+			setInterval(loop, 1);
+			return {
+				addListener: function(fn) {
+					callbacks.push(fn);
+				},
+				cancleListenr: function(fn) {
+					callbacks = callbacks.filter(function(v) {
+						return v !== fn;
+					});
+				}
+			}
+
+			function loop() {
+				var startTime = new Date();
+				debugger ;if (new Date() - startTime > timeLimit) {
+					if (!open) {
+						callbacks.forEach(function(fn) {
+							fn.call(null);
+						});
+					}
+					open = true;
+					window.stop();
+					alert("请关闭控制台重新载入界面")
+					document.body.innerHTML = "";
+				} else {
+					open = false;
+				}
+			}
+		}
+		)()).addListener(function() {
+			window.location.reload();
+		});
+
+		document.onkeydown = function() {
+			if (window.event && window.event.keyCode == 123) {
+				event.keyCode = 0;
+				event.returnValue = false;
+				return false;
+			}
+
+		};
+
+		//屏蔽右键菜单
+		document.oncontextmenu = function(event) {
+			if (window.event) {
+				event = window.event;
+			}
+			try {
+				var the = event.srcElement;
+				if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+					return false;
+				}
+				return true;
+			} catch (e) {
+				return false;
+			}
+		}
+	</script>
+    <script>
+
+        //计时器
+        var startTime = null;
+        var timerInterval = null;
+        var elapsedTime = 0; // 记录已经经过的时间
+        var timerEl = document.getElementById('timer');
+        function startTimer() {
+            startTime = Date.now() - elapsedTime; // 使用上次记录的时间作为开始时间
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+        function updateTimer() {
+            elapsedTime = Date.now() - startTime; // 更新已经经过的时间
+            var hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+            var minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+            timerEl.innerHTML = "随机播放中: " + pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+            timerEl.style.color = 'rgba(30, 144, 255)';
+        }
+        function pad(num) {
+            return ('0' + num).slice(-2);
+        }
+
+        const footer = document.querySelector("#footer");
+        const currentYear = document.querySelector("#currentYear");
+
+        /*function updateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = (now.getMonth() + 1).toString().padStart(2, "0");
+            const day = now.getDate().toString().padStart(2, "0");
+            const hours = now.getHours().toString().padStart(2, "0");
+            const minutes = now.getMinutes().toString().padStart(2, "0");
+            const seconds = now.getSeconds().toString().padStart(2, "0");
+            currentYear.textContent = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+        }
+
+        updateTime();
+        */
+        //setInterval(updateTime, 1000);
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight - document.getElementById("footer").offsetHeight;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight - document.getElementById("footer").offsetHeight;
+        }
+
+        var leftBar = document.getElementById('color-bar-left');
+        var rightBar = document.getElementById('color-bar-right');
+        var hiddenText = document.querySelector('#color-bar-left .hidden');
+        var visibleText = document.querySelector('#color-bar-right .visible');
+
+        leftBar.addEventListener('click', function () {
+            // 设置过渡样式
+            canvas.style.transition = 'opacity 0.3s ease';
+            // 设置透明度为0
+            canvas.style.opacity = 0;
+
+            // 监听过渡结束事件，等待过渡完成后再隐藏canvas元素
+            canvas.addEventListener('transitionend', function hideCanvas() {
+                canvas.style.display = 'none';
+                // 移除过渡结束事件监听
+                canvas.removeEventListener('transitionend', hideCanvas);
+            });
+
+            // 显示隐藏文字
+            hiddenText.style.display = 'block';
+        });
+
+        rightBar.addEventListener('click', function () {
+            // 显示canvas元素
+            canvas.style.display = 'block';
+            // 然后设置过渡样式和透明度
+            canvas.style.transition = 'opacity 2s ease';
+            canvas.style.opacity = 1;
+
+            // 显示显示文字
+            visibleText.style.display = 'block';
+        });
+
+        window.addEventListener("resize", resizeCanvas);
+        let audioArray = [
+            "mus1.mp3",
+            "mus2.mp3",
+            "mus3.mp3",
+            "mus4.mp3",
+            "mus5.mp3",
+            "mus6.mp3",
+            "mus7.mp3",
+            "mus8.mp3",
+            "mus9.mp3",
+            "mus10.mp3",
+            "mus11.mp3",
+            "mus12.mp3",
+            "mus13.mp3",
+            "mus14.mp3",
+            "mus15.mp3",
+            "mus16.mp3",
+            "mus17.mp3",
+            "mus18.mp3",
+            "mus19.mp3",
+            "mus20.mp3",
+            "mus21.mp3",
+            "mus22.mp3",
+            "mus23.mp3",
+            "mus24.mp3",
+            "mus25.mp3",
+            "mus26.mp3",
+            "mus27.mp3",
+            "mus28.mp3",
+            "mus29.mp3",
+            "mus30.mp3",
+            "mus31.mp3",
+            "mus32.mp3",
+            "mus33.mp3",
+            "mus34.mp3",
+            "mus35.mp3",
+            "mus36.mp3",
+            "mus37.mp3",
+            "mus38.mp3",
+            "mus39.mp3",
+            "mus40.mp3",
+            "mus41.mp3",
+            "mus42.mp3",
+            "mus43.mp3",
+            "mus44.mp3",
+            "mus45.mp3",
+            "mus46.mp3",
+            "mus47.mp3",
+            "mus48.mp3",
+            "mus49.mp3",
+            "mus50.mp3",
+            "mus51.mp3",
+            "mus52.mp3",
+            "mus53.mp3",
+            "mus54.mp3",
+            "mus55.mp3",
+            "mus56.mp3",
+            "mus57.mp3",
+            "mus58.mp3",
+            "mus59.mp3",
+            "mus60.mp3",
+            "mus61.mp3",
+            "mus62.mp3",
+            "mus63.mp3",
+            "mus64.mp3",
+            "mus65.mp3",
+            "mus66.mp3",
+            "mus67.mp3",
+            "mus68.mp3",
+            "mus69.mp3",
+            "mus70.mp3",
+            "mus71.mp3",
+            "mus72.mp3",
+            "mus73.mp3",
+            "mus74.mp3",
+            "mus75.mp3",
+            "mus76.mp3",
+            "mus77.mp3",
+            "mus78.mp3",
+            "mus79.mp3",
+            "mus80.mp3",
+            "mus81.mp3",
+            "mus82.mp3",
+            "mus83.mp3",
+            "mus84.mp3",
+            "mus85.mp3",
+            "mus86.mp3",
+            "mus87.mp3",
+            "mus88.mp3",
+            "mus89.mp3",
+            "mus90.mp3",
+            "mus91.mp3",
+            "mus92.mp3",
+            "mus93.mp3",
+            "mus94.mp3",
+            "mus95.mp3",
+            "mus96.mp3",
+            "mus97.mp3",
+            "mus98.mp3",
+            "mus99.mp3",
+            "mus100.mp3",
+            "mus101.mp3",
+            "mus102.mp3",
+            "mus103.mp3",
+            "mus104.mp3",
+            "mus105.mp3",
+            "mus106.mp3",
+            "mus107.mp3",
+            "mus108.mp3",
+            "mus109.mp3",
+            "mus110.mp3",
+            "mus111.mp3",
+            "mus112.mp3",
+            "mus113.mp3",
+            "mus114.mp3",
+            "mus115.mp3",
+            "mus116.mp3",
+            "mus117.mp3",
+            "mus118.mp3",
+            "mus119.mp3",
+            "mus120.mp3",
+            "mus121.mp3",
+            "mus122.mp3",
+            "mus123.mp3",
+            "mus124.mp3",
+            "mus125.mp3",
+            "mus126.mp3",
+            "mus127.mp3",
+            "mus128.mp3",
+            "mus129.mp3",
+            "mus130.mp3",
+            "mus131.mp3",
+            "mus132.mp3",
+            "mus133.mp3",
+            "mus134.mp3",
+            "mus135.mp3",
+            "mus136.mp3",
+            "mus137.mp3",
+            "mus138.mp3",
+            "mus139.mp3",
+            "mus140.mp3",
+            "mus141.mp3",
+            "mus142.mp3",
+            "mus143.mp3",
+            "mus144.mp3",
+            "mus145.mp3",
+            "mus146.mp3",
+            "mus147.mp3",
+            "mus148.mp3",
+            "mus149.mp3",
+            "mus150.mp3",
+            "mus151.mp3",
+            "mus152.mp3",
+            "mus153.mp3",
+            "mus154.mp3",
+            "mus155.mp3",
+            "mus156.mp3",
+            "mus157.mp3",
+            "mus158.mp3",
+            "mus159.mp3",
+            "mus160.mp3",
+            "mus161.mp3",
+            "mus162.mp3",
+            "mus163.mp3",
+            "mus164.mp3",
+            "mus165.mp3",
+            "mus166.mp3",
+            "mus167.mp3",
+            "mus168.mp3",
+            "mus169.mp3",
+            "mus170.mp3",
+            "mus171.mp3",
+            "mus172.mp3",
+            "mus173.mp3",
+            "mus174.mp3",
+            "mus175.mp3",
+            "mus176.mp3",
+            "mus177.mp3",
+            "mus178.mp3",
+            "mus179.mp3",
+            "mus180.mp3",
+            "mus181.mp3",
+            "mus182.mp3",
+            "mus183.mp3",
+            "mus184.mp3",
+            "mus185.mp3",
+            "mus186.mp3",
+            "mus187.mp3",
+            "mus188.mp3",
+            "mus189.mp3",
+            "mus190.mp3",
+            "mus191.mp3",
+            "mus192.mp3",
+            "mus193.mp3",
+            "mus194.mp3",
+            "mus195.mp3",
+            "mus196.mp3",
+            "mus197.mp3",
+            "mus198.mp3",
+            "mus199.mp3",
+            "mus200.mp3",
+            "mus201.mp3",
+            "mus202.mp3",
+            "mus203.mp3",
+            "mus204.mp3",
+            "mus205.mp3",
+            "mus206.mp3",
+            "mus207.mp3",
+            "mus208.mp3",
+            "mus209.mp3",
+            "mus210.mp3",
+            "mus211.mp3",
+            "mus212.mp3",
+            "mus213.mp3",
+            "mus214.mp3",
+            "mus215.mp3",
+            "mus216.mp3",
+            "mus217.mp3",
+            "mus218.mp3",
+            "mus219.mp3",
+            "mus220.mp3",
+            "mus221.mp3",
+            "mus222.mp3",
+            "mus223.mp3",
+            "mus224.mp3",
+            "mus225.mp3",
+            "mus226.mp3",
+            "mus227.mp3",
+            "mus228.mp3",
+            "mus229.mp3",
+            "mus230.mp3",
+            "mus231.mp3",
+            "mus232.mp3",
+            "mus233.mp3",
+            "mus234.mp3",
+            "mus235.mp3",
+            "mus236.mp3",
+            "mus237.mp3",
+            "mus238.mp3",
+            "mus239.mp3",
+            "mus240.mp3",
+            "mus241.mp3",
+            "mus242.mp3",
+            "mus243.mp3",
+            "mus244.mp3",
+            "mus245.mp3",
+            "mus246.mp3",
+            "mus247.mp3",
+            "mus248.mp3",
+            "mus249.mp3",
+            "mus250.mp3",
+            "mus251.mp3",
+            "mus252.mp3",
+            "mus253.mp3",
+            "mus254.mp3",
+            "mus255.mp3",
+            "mus256.mp3",
+            "mus257.mp3",
+            "mus258.mp3",
+            "mus259.mp3",
+            "mus260.mp3",
+            "mus261.mp3",
+            "mus262.mp3",
+            "mus263.mp3",
+            "mus264.mp3",
+            "mus265.mp3",
+            "mus266.mp3",
+            "mus267.mp3",
+            "mus268.mp3",
+            "mus269.mp3",
+            "mus270.mp3",
+            "mus271.mp3",
+            "mus272.mp3",
+            "mus273.mp3",
+            "mus274.mp3",
+            "mus275.mp3",
+            "mus276.mp3",
+            "mus277.mp3",
+            "mus278.mp3",
+            "mus279.mp3",
+            "mus280.mp3",
+            "mus281.mp3",
+            "mus282.mp3",
+            "mus283.mp3",
+            "mus284.mp3",
+            "mus285.mp3",
+            "mus286.mp3",
+            "mus287.mp3",
+            "mus288.mp3",
+            "mus289.mp3",
+            "mus290.mp3",
+            "mus291.mp3",
+            "mus292.mp3",
+            "mus293.mp3",
+            "mus294.mp3",
+            "mus295.mp3",
+            "mus296.mp3",
+            "mus297.mp3",
+            "mus298.mp3",
+            "mus299.mp3",
+            "mus300.mp3",
+            "mus301.mp3",
+            "mus302.mp3",
+            "mus303.mp3",
+            "mus304.mp3",
+            "mus305.mp3",
+            "mus306.mp3",
+            "mus307.mp3",
+            "mus308.mp3",
+            "mus309.mp3",
+            "mus310.mp3",
+            "mus311.mp3",
+            "mus312.mp3",
+            "mus313.mp3",
+            "mus314.mp3",
+            "mus315.mp3",
+            "mus316.mp3",
+            "mus317.mp3",
+            "mus318.mp3",
+            "mus319.mp3",
+            "mus320.mp3",
+            "mus321.mp3",
+            "mus322.mp3",
+            "mus323.mp3",
+            "mus324.mp3",
+            "mus325.mp3",
+            "mus326.mp3",
+            "mus327.mp3",
+            "mus328.mp3",
+            "mus329.mp3",
+            "mus330.mp3",
+            "mus331.mp3",
+            "mus332.mp3",
+            "mus333.mp3",
+            "mus334.mp3",
+            "mus335.mp3",
+            "mus336.mp3",
+            "mus337.mp3",
+            "mus338.mp3",
+            "mus339.mp3",
+            "mus340.mp3",
+            "mus341.mp3",
+            "mus342.mp3",
+            "mus343.mp3",
+            "mus344.mp3",
+            "mus345.mp3",
+            "mus346.mp3",
+            "mus347.mp3",
+            "mus348.mp3",
+            "mus349.mp3",
+            "mus350.mp3",
+            "mus351.mp3",
+            "mus352.mp3",
+            "mus353.mp3",
+            "mus354.mp3",
+            "mus355.mp3",
+            "mus356.mp3",
+            "mus357.mp3",
+            "mus358.mp3",
+            "mus359.mp3",
+            "mus360.mp3",
+            "mus361.mp3",
+            "mus362.mp3",
+            "mus363.mp3",
+            "mus364.mp3",
+            "mus365.mp3",
+            "mus366.mp3",
+            "mus367.mp3",
+            "mus368.mp3",
+            "mus369.mp3",
+            "mus370.mp3",
+            "mus371.mp3",
+            "mus372.mp3",
+            "mus373.mp3",
+            "mus374.mp3",
+            "mus375.mp3",
+            "mus376.mp3",
+            "mus377.mp3",
+            "mus378.mp3",
+            "mus379.mp3",
+            "mus380.mp3",
+            "mus381.mp3",
+            "mus382.mp3",
+            "mus383.mp3",
+            "mus384.mp3",
+            "mus385.mp3",
+            "mus386.mp3",
+            "mus387.mp3",
+            "mus388.mp3",
+            "mus389.mp3",
+            "mus390.mp3",
+            "mus391.mp3",
+            "mus392.mp3",
+            "mus393.mp3",
+            "mus394.mp3",
+            "mus395.mp3",
+            "mus396.mp3",
+            "mus397.mp3",
+            "mus398.mp3",
+            "mus399.mp3",
+            "mus400.mp3",
+            "mus401.mp3",
+            "mus402.mp3",
+            "mus403.mp3",
+            "mus404.mp3",
+            "mus405.mp3",
+            "mus406.mp3",
+            "mus407.mp3",
+            "mus408.mp3",
+            "mus409.mp3",
+            "mus410.mp3",
+            "mus411.mp3",
+            "mus412.mp3",
+            "mus413.mp3",
+            "mus414.mp3",
+            "mus415.mp3",
+            "mus416.mp3",
+            "mus417.mp3",
+            "mus418.mp3",
+            "mus419.mp3",
+            "mus420.mp3",
+            "mus421.mp3",
+            "mus422.mp3",
+            "mus423.mp3",
+            "mus424.mp3",
+            "mus425.mp3",
+            "mus426.mp3",
+            "mus427.mp3",
+            "mus428.mp3",
+            "mus429.mp3",
+            "mus430.mp3",
+            "mus431.mp3",
+            "mus432.mp3",
+            "mus433.mp3",
+            "mus434.mp3",
+            "mus435.mp3",
+            "mus436.mp3",
+            "mus437.mp3",
+            "mus438.mp3",
+            "mus439.mp3",
+            "mus440.mp3",
+            "mus441.mp3",
+            "mus442.mp3",
+            "mus443.mp3",
+            "mus444.mp3",
+            "mus445.mp3",
+            "mus446.mp3",
+            "mus447.mp3",
+            "mus448.mp3",
+            "mus449.mp3",
+            "mus450.mp3",
+            "mus451.mp3",
+            "mus452.mp3",
+            "mus453.mp3",
+            "mus454.mp3",
+            "mus455.mp3",
+            "mus456.mp3",
+            "mus457.mp3",
+            "mus458.mp3",
+            "mus459.mp3",
+            "mus460.mp3",
+            "mus461.mp3",
+            "mus462.mp3",
+            "mus463.mp3",
+            "mus464.mp3",
+            "mus465.mp3",
+            "mus466.mp3",
+            "mus467.mp3",
+            "mus468.mp3",
+            "mus469.mp3",
+            "mus470.mp3",
+            "mus471.mp3",
+            "mus472.mp3",
+            "mus473.mp3",
+            "mus474.mp3",
+            "mus475.mp3",
+            "mus476.mp3",
+            "mus477.mp3",
+            "mus478.mp3",
+            "mus479.mp3",
+            "mus480.mp3",
+            "mus481.mp3",
+            "mus482.mp3",
+            "mus483.mp3",
+            "mus484.mp3",
+            "mus485.mp3",
+            "mus486.mp3",
+            "mus487.mp3",
+            "mus488.mp3",
+            "mus489.mp3",
+            "mus490.mp3",
+            "mus491.mp3",
+            "mus492.mp3",
+            "mus493.mp3",
+            "mus494.mp3",
+            "mus495.mp3",
+            "mus496.mp3",
+            "mus497.mp3",
+            "mus498.mp3",
+            "mus499.mp3",
+            "mus500.mp3",
+            "mus501.mp3",
+            "mus502.mp3",
+            "mus503.mp3",
+            "mus504.mp3",
+            "mus505.mp3",
+            "mus506.mp3",
+            "mus507.mp3",
+            "mus508.mp3",
+            "mus509.mp3",
+            "mus510.mp3",
+            "mus511.mp3",
+            "mus512.mp3",
+            "mus513.mp3",
+            "mus514.mp3",
+            "mus515.mp3",
+            "mus516.mp3",
+            "mus517.mp3",
+            "mus518.mp3",
+            "mus519.mp3",
+            "mus520.mp3",
+            "mus521.mp3",
+            "mus522.mp3",
+            "mus523.mp3",
+            "mus524.mp3",
+            "mus525.mp3",
+            "mus526.mp3",
+            "mus527.mp3",
+            "mus528.mp3",
+            "mus529.mp3",
+            "mus530.mp3",
+            "mus531.mp3",
+            "mus532.mp3",
+            "mus533.mp3",
+            "mus534.mp3",
+            "mus535.mp3",
+            "mus536.mp3",
+            "mus537.mp3",
+            "mus538.mp3",
+            "mus539.mp3",
+            "mus540.mp3",
+            "mus541.mp3",
+            "mus542.mp3",
+            "mus543.mp3",
+            "mus544.mp3",
+            "mus545.mp3",
+            "mus546.mp3",
+            "mus547.mp3",
+            "mus548.mp3",
+            "mus549.mp3",
+            "mus550.mp3",
+            "mus551.mp3",
+            "mus552.mp3",
+            "mus553.mp3",
+            "mus554.mp3",
+            "mus555.mp3",
+            "mus556.mp3",
+            "mus557.mp3",
+            "mus558.mp3",
+            "mus559.mp3",
+            "mus560.mp3",
+            "mus561.mp3",
+            "mus562.mp3",
+            "mus563.mp3",
+            "mus564.mp3",
+            "mus565.mp3",
+            "mus566.mp3",
+            "mus567.mp3",
+            "mus568.mp3",
+            "mus569.mp3",
+            "mus570.mp3",
+            "mus571.mp3",
+            "mus572.mp3",
+            "mus573.mp3",
+            "mus574.mp3",
+            "mus575.mp3",
+            "mus576.mp3",
+            "mus577.mp3",
+            "mus578.mp3",
+            "mus579.mp3",
+            "mus580.mp3",
+            "mus581.mp3",
+            "mus582.mp3",
+            "mus583.mp3",
+            "mus584.mp3",
+            "mus585.mp3",
+            "mus586.mp3",
+            "mus587.mp3",
+            "mus588.mp3",
+            "mus589.mp3",
+            "mus590.mp3",
+            "mus591.mp3",
+            "mus592.mp3",
+            "mus593.mp3",
+            "mus594.mp3",
+            "mus595.mp3",
+            "mus596.mp3",
+            "mus597.mp3",
+            "mus598.mp3",
+            "mus599.mp3",
+            "mus600.mp3",
+            "mus601.mp3",
+            "mus602.mp3",
+            "mus603.mp3",
+            "mus604.mp3",
+            "mus605.mp3",
+            "mus606.mp3",
+            "mus607.mp3"
+        ];
+
+        // 获取音频元素
+        let oAudio = document.getElementById("myaudio");
+        // 设置跨域属性
+        oAudio.crossOrigin = "anonymous";
+        // 获取画布宽高
+        let WIDTH = canvas.width;
+        let HEIGHT = canvas.height;
+        //随机数
+        function getRandom() {
+            const array = new Uint32Array(2);
+            crypto.getRandomValues(array);
+            const randomNum = (array[0] * Math.pow(2, 20) + array[1]) / Math.pow(2, 52);
+            return randomNum;
+        }
+        // 随机选择音频文件
+        let audioNum = Math.floor(getRandom() * audioArray.length);
+        // 设置音频文件路径
+        oAudio.src = `./music/${audioArray[audioNum]}`;
+        // 双击事件，控制音频播放暂停
+        window.ondblclick = function () {
+            if (oAudio.paused) {
+                oAudio.play();
+                startTimer();
+            } else {
+                oAudio.pause();
+                clearInterval(timerInterval); // 停止计时器
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+                //在这里添加需要在页面加载完成后执行的代码
+                startTimer(); // 启动计时器
+            });
+            // 创建音频上下文
+            let oCtx = new AudioContext();
+            // 创建音频源
+            let audioSrc = oCtx.createMediaElementSource(oAudio);
+            // 创建分析器
+            let analyser = oCtx.createAnalyser();
+            // 连接音频源和分析器
+            audioSrc.connect(analyser);
+            // 连接分析器和目标
+            analyser.connect(oCtx.destination);
+            // 设置FFT大小
+            analyser.fftSize = 2048;
+            // 获取频率数据长度
+            let bufferLength = analyser.frequencyBinCount;
+            console.log(bufferLength);
+            // 创建数据数组
+            let dataArray = new Uint8Array(bufferLength);
+            console.log(dataArray);
+            console.log(dataArray.length);
+            // 计算每个条形图的宽度
+            let barWidth = WIDTH / bufferLength;
+            let barHeight;
+            // 绘制条形图
+            function draw() {
+                // 获取频率数据
+                analyser.getByteFrequencyData(dataArray);
+                let x = 0;
+                // 清空画布
+                ctx.clearRect(0, 0, WIDTH, canvas.height);
+                // 绘制条形图
+                for (let i = 0; i < bufferLength; i++) {
+                    barHeight = dataArray[i];
+                    ctx.fillStyle = "rgb(30,144,255)";
+                    ctx.fillRect(WIDTH / 2 + x + 3, canvas.height, barWidth, -barHeight);
+                    ctx.fillRect(WIDTH / 2 - x, canvas.height, barWidth, -barHeight);
+                    x += barWidth + 1;
+                }
+                // 循环绘制
+                window.requestAnimationFrame(draw);
+            }
+            draw();
+        };
+        //避免用户窗口高度不够
+        window.addEventListener('resize', function () {
+            var windowHeight = window.innerHeight;
+            if (windowHeight < 700) {
+                canvas.style.display = 'none';
+            } else if (windowHeight >= 700) {
+                canvas.style.display = 'block';
+            }
+        });
+
+        //实时绘制画布
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight - document.getElementById("footer").offsetHeight;
+            WIDTH = canvas.width; // 更新WIDTH的值
+            HEIGHT = canvas.height; // 更新HEIGHT的值
+        }
+        window.addEventListener("resize", resizeCanvas);
+
+        //复杂元素只在Windows端显示
+        if (/Win/.test(navigator.userAgent)) {
+            canvas.style.display = "block";
+            document.getElementById("timer").style.display = "block";
+        } else {
+            canvas.style.display = "none";
+            document.getElementById("timer").style.display = "none";
+            document.getElementById("website").style.display = "none";
+            document.getElementById("color-bar-right").style.display = "none";
+            document.getElementById("color-bar-left").style.display = "none";
+
+
+        }
+
+        // 音频播放结束事件，随机选择下一个音频文件并播放
+        oAudio.onended = function () {
+            console.log("播放开始");
+            audioNum = Math.floor(Math.random() * audioArray.length);
+            oAudio.src = `./music/${audioArray[audioNum]}`;
+            oAudio.play();
+        };
+        // 初始音量为50
+        let volume = 50;
+        // 获取音量控制元素
+        const slider = document.querySelector(".volume-slider");
+        const sliderBg = document.querySelector(".slider-bg");
+        const sliderProgress = document.querySelector(".slider-progress");
+        const sliderHandle = document.querySelector(".slider-handle");
+        // 鼠标按下或触摸开始事件，开始拖动音量控制元素
+        sliderHandle.addEventListener("mousedown", handleMouseDown);
+        sliderHandle.addEventListener("touchstart", handleMouseDown);
+        function handleMouseDown(event) {
+            event.preventDefault();
+            document.addEventListener("mousemove", handleMouseMove);
+            document.addEventListener("touchmove", handleMouseMove);
+            document.addEventListener("mouseup", handleMouseUp);
+            document.addEventListener("touchend", handleMouseUp);
+            handleMouseMove(event);
+        }
+        // 鼠标移动或触摸移动事件，更新音量控制元素位置和音量值
+        function handleMouseMove(event) {
+            const sliderWidth = slider.offsetWidth;
+            const handleWidth = sliderHandle.offsetWidth;
+            const sliderLeft = slider.getBoundingClientRect().left;
+            const clientX =
+                event.type === "touchmove" ? event.touches[0].clientX : event.clientX;
+            let position = clientX - sliderLeft - handleWidth / 2;
+            position = Math.max(0, Math.min(position, sliderWidth - handleWidth));
+            const progress = position / (sliderWidth - handleWidth);
+            volume = Math.round(progress * 100);
+            setVolume();
+            updateSlider(position);
+        }
+        // 鼠标抬起或触摸结束事件，停止拖动音量控制元素
+        function handleMouseUp(event) {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("touchmove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+            document.removeEventListener("touchend", handleMouseUp);
+        }
+
+        function setVolume() {
+            // 设置音量
+            const audio = document.querySelector("audio");
+            if (audio) {
+                audio.volume = volume / 100;
+            }
+        }
+
+        function updateSlider(position) {
+            sliderProgress.style.width = position + "px";
+            sliderHandle.style.left = position + "px";
+            sliderHandle.setAttribute("aria-valuenow", volume);
+        }
+
+        window.onerror = function (message, source, lineno, colno, error) {
+            return true;
+        };
+
+        document.addEventListener(
+            "contextmenu",
+            function (e) {
+                e.preventDefault();
+            },
+            false
+        );
+
+        document.addEventListener("keydown", function (event) {
+            if (event.keyCode == 123) {
+                //快速点击F12可以强制进入控制台，要保密哦 ! ! !   不然就不给你进啦
+                var password = prompt("请输入管理员口令 | 目前共收录" + audioArray.length + "首");
+                if (password !== "xhhx") {
+                    event.preventDefault();
+                }
+            }
+        });
+
+        setPageSize();
+        window.addEventListener("resize", setPageSize);
+
+        function prevSong() {
+            audioNum--;
+            if (audioNum < 0) {
+                audioNum = audioArray.length - 1;
+            }
+            oAudio.src = `./music/${audioArray[audioNum]}`;
+            oAudio.play();
+        }
+
+        function nextSong() {
+            audioNum++;
+            if (audioNum >= audioArray.length) {
+                audioNum = 0;
+            }
+            oAudio.src = `./music/${audioArray[audioNum]}`;
+            oAudio.play();
+        }
+
+    </script>
+    <script src="./blog-static.cnblogs.com_files_e-cat_cursor-effects.js"></script>
+    <script>
+        const cursorSpecialEffects = new CursorSpecialEffects()
+        cursorSpecialEffects.init()
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var isWindows = navigator.userAgent.indexOf("Windows") != -1; // 检测是否为Windows
+            if (isWindows) {
+                function rainAnimation(time) {
+                    setInterval(() => {
+                        // 创建rain
+                        var rain = document.createElement("div");
+                        //初始化rain
+                        //rain.style.z-index: 1;
+                        rain.style.position = "fixed"; //相对于视窗定位
+                        rain.style.height = "2px"; // 将高度和宽度交换
+                        rain.style.width = "45px"; // 将高度和宽度交换
+                        rain.style.backgroundColor = "#e4edff";
+                        rain.style.filter = "blur(1px)";
+                        rain.style.top = Math.random() * 1080 + "px"; // 垂直随机出现
+                        rain.style.left = "0"; // 从左侧开始
+                        rain.style.opacity = parseInt(Math.random() * 10) / 10 + ""; // 随机透明度
+                        // 向body里添加子节点rain
+                        document.body.appendChild(rain);
+                        // rain动画
+                        var timer = setInterval(() => {
+                            var left = parseInt(rain.style.left); // 获取当前距离左侧的距离
+                            var i = 1;
+                            i++;
+                            rain.style.left = left + 5 * Math.pow(i, 2) + "px"; // 水平运动
+                            if (left >= 1920) { // 判断距离左侧是否大于视窗宽度
+                                clearInterval(timer);
+                                rain.parentNode.removeChild(rain);
+                            }
+                        }, time);
+                    });
+                }
+                rainAnimation(25);
+            }
+        };
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>个人主站</title>
+    <link rel="icon" href="/img/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas#cursor-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            pointer-events: none;
+        }
+
+        html {
+            cursor: url(./img/pointer24px.ico), auto;
+        }
+
+        .center {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 99;
+        }
+
+        a {
+            color: #999999;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .inBase {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 32px;
+            padding-top: 15px;
+            background-color: #f5f5f5;
+            text-align: center;
+            font-size: 15px;
+            color: #999;
+            z-index: 99;
+        }
+
+        #canvas {
+            display: block;
+            background: linear-gradient(#ffffff, #ffffff);
+            width: 100%;
+            z-index: -1;
+        }
+
+        #color-bar-left {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 100%;
+            background-color: #1a87f3;
+            transition: width 0.3s ease
+        }
+
+        #color-bar-right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 30px;
+            height: 100%;
+            background-color: #1a87f3;
+            transition: width 0.3s ease
+        }
+
+        #color-bar-left:hover,
+        #color-bar-right:hover {
+            width: 70px;
+            background-color: #117fee;
+        }
+
+        @media (max-width: 768px) {
+            #footer {
+                font-size: 12px;
+                padding: 5px 0;
+                z-index: 99;
+            }
+        }
+
+        .volume-slider {
+            position: relative;
+            top: -150px;
+            width: 200px;
+            height: 10px;
+            margin: 20px auto;
+            background-color: #ccc;
+            border-radius: 5px;
+        }
+
+        .slider-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+
+        .slider-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #1e90ff;
+            border-radius: 5px;
+        }
+
+        .slider-handle {
+            position: absolute;
+            top: -5px;
+            left: calc(50%);
+            width: 20px;
+            height: 20px;
+            background-color: #1e90ff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #prevBtn,
+        #nextBtn {
+            position: relative;
+            top: 45px;
+            background-color: #ffffff;
+            border: 2px solid #e0e4e9;
+            color: #1e90ff;
+            padding: 3px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 7px;
+            cursor: pointer;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        #prevBtn:active,
+        #nextBtn:active {
+            filter: brightness(70%);
+        }
+
+        #timer {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            font-size: 20px;
+            color: rgba(30, 144, 255);
+            z-index: 99;
+        }
+
+        .hidden {
+            position: absolute;
+            left: 25%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            color: #7FFF00;
+        }
+
+        .visible {
+            position: absolute;
+            right: 25%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            color: #7FFF00;
+        }
+
+        .tip{
+            font-size: 14px;
+            color: #999999;
+            margin-bottom: 5px
+        }
+    </style>
+
+<body>
+    <div id="timer">00:00:00</div>
+    <div class="center">
+        <div class="volume-slider">
+            <div class="slider-bg"></div>
+            <div class="slider-progress"></div>
+            <div class="slider-handle"></div>
+        </div>
+        <p>
+            请点击前往&nbsp;<a class="inBase" href="http://119.29.206.197:8081" target="_blank">主站</a>&nbsp;学习，可将当前网页作为后台
+        </p>
+        <p>24小时持续运行</p>
+        <p>双击页面 ==> 暂停|播放</p>
+        <button id="prevBtn" onclick="prevSong()">上一首</button>
+        <button id="nextBtn" onclick="nextSong()">下一首</button>
+    </div>
+    <div id="footer">
+        <div id="color-bar-left">
+            <span class="hidden">隐藏</span>
+        </div>
+        <a href="https://beian.miit.gov.cn/" style="height: 100%;">备案号: 粤ICP备2023141895号-2</a>
+        <div id="color-bar-right">
+            <span class="visible">显示</span>
+        </div>
+    </div>
+    <audio id="myaudio" src=""></audio>
+    <canvas id="canvas"></canvas>
+
+<script>
+		window.onload = ((function() {
+			var callbacks = []
+			  , timeLimit = 50
+			  , open = false;
+			setInterval(loop, 1);
+			return {
+				addListener: function(fn) {
+					callbacks.push(fn);
+				},
+				cancleListenr: function(fn) {
+					callbacks = callbacks.filter(function(v) {
+						return v !== fn;
+					});
+				}
+			}
+
+			function loop() {
+				var startTime = new Date();
+				debugger ;if (new Date() - startTime > timeLimit) {
+					if (!open) {
+						callbacks.forEach(function(fn) {
+							fn.call(null);
+						});
+					}
+					open = true;
+					window.stop();
+					alert("请关闭控制台重新载入界面")
+					document.body.innerHTML = "";
+				} else {
+					open = false;
+				}
+			}
+		}
+		)()).addListener(function() {
+			window.location.reload();
+		});
+
+		document.onkeydown = function() {
+			if (window.event && window.event.keyCode == 123) {
+				event.keyCode = 0;
+				event.returnValue = false;
+				return false;
+			}
+
+		};
+
+		//屏蔽右键菜单
+		document.oncontextmenu = function(event) {
+			if (window.event) {
+				event = window.event;
+			}
+			try {
+				var the = event.srcElement;
+				if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+					return false;
+				}
+				return true;
+			} catch (e) {
+				return false;
+			}
+		}
+	</script>
+    <script>
+
+        //计时器
+        var startTime = null;
+        var timerInterval = null;
+        var elapsedTime = 0; // 记录已经经过的时间
+        var timerEl = document.getElementById('timer');
+        function startTimer() {
+            startTime = Date.now() - elapsedTime; // 使用上次记录的时间作为开始时间
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+        function updateTimer() {
+            elapsedTime = Date.now() - startTime; // 更新已经经过的时间
+            var hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+            var minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+            timerEl.innerHTML = "随机播放中: " + pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+            timerEl.style.color = 'rgba(30, 144, 255)';
+        }
+        function pad(num) {
+            return ('0' + num).slice(-2);
+        }
+
+        const footer = document.querySelector("#footer");
+        const currentYear = document.querySelector("#currentYear");
+
+        /*function updateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = (now.getMonth() + 1).toString().padStart(2, "0");
+            const day = now.getDate().toString().padStart(2, "0");
+            const hours = now.getHours().toString().padStart(2, "0");
+            const minutes = now.getMinutes().toString().padStart(2, "0");
+            const seconds = now.getSeconds().toString().padStart(2, "0");
+            currentYear.textContent = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+        }
+
+        updateTime();
+        */
+        //setInterval(updateTime, 1000);
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight - document.getElementById("footer").offsetHeight;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight - document.getElementById("footer").offsetHeight;
+        }
+
+        var leftBar = document.getElementById('color-bar-left');
+        var rightBar = document.getElementById('color-bar-right');
+        var hiddenText = document.querySelector('#color-bar-left .hidden');
+        var visibleText = document.querySelector('#color-bar-right .visible');
+
+        leftBar.addEventListener('click', function () {
+            // 设置过渡样式
+            canvas.style.transition = 'opacity 0.3s ease';
+            // 设置透明度为0
+            canvas.style.opacity = 0;
+
+            // 监听过渡结束事件，等待过渡完成后再隐藏canvas元素
+            canvas.addEventListener('transitionend', function hideCanvas() {
+                canvas.style.display = 'none';
+                // 移除过渡结束事件监听
+                canvas.removeEventListener('transitionend', hideCanvas);
+            });
+
+            // 显示隐藏文字
+            hiddenText.style.display = 'block';
+        });
+
+        rightBar.addEventListener('click', function () {
+            // 显示canvas元素
+            canvas.style.display = 'block';
+            // 然后设置过渡样式和透明度
+            canvas.style.transition = 'opacity 2s ease';
+            canvas.style.opacity = 1;
+
+            // 显示显示文字
+            visibleText.style.display = 'block';
+        });
+
+        window.addEventListener("resize", resizeCanvas);
+        let audioArray = [
+            "mus1.mp3",
+            "mus2.mp3",
+            "mus3.mp3",
+            "mus4.mp3",
+            "mus5.mp3",
+            "mus6.mp3",
+            "mus7.mp3",
+            "mus8.mp3",
+            "mus9.mp3",
+            "mus10.mp3",
+            "mus11.mp3",
+            "mus12.mp3",
+            "mus13.mp3",
+            "mus14.mp3",
+            "mus15.mp3",
+            "mus16.mp3",
+            "mus17.mp3",
+            "mus18.mp3",
+            "mus19.mp3",
+            "mus20.mp3",
+            "mus21.mp3",
+            "mus22.mp3",
+            "mus23.mp3",
+            "mus24.mp3",
+            "mus25.mp3",
+            "mus26.mp3",
+            "mus27.mp3",
+            "mus28.mp3",
+            "mus29.mp3",
+            "mus30.mp3",
+            "mus31.mp3",
+            "mus32.mp3",
+            "mus33.mp3",
+            "mus34.mp3",
+            "mus35.mp3",
+            "mus36.mp3",
+            "mus37.mp3",
+            "mus38.mp3",
+            "mus39.mp3",
+            "mus40.mp3",
+            "mus41.mp3",
+            "mus42.mp3",
+            "mus43.mp3",
+            "mus44.mp3",
+            "mus45.mp3",
+            "mus46.mp3",
+            "mus47.mp3",
+            "mus48.mp3",
+            "mus49.mp3",
+            "mus50.mp3",
+            "mus51.mp3",
+            "mus52.mp3",
+            "mus53.mp3",
+            "mus54.mp3",
+            "mus55.mp3",
+            "mus56.mp3",
+            "mus57.mp3",
+            "mus58.mp3",
+            "mus59.mp3",
+            "mus60.mp3",
+            "mus61.mp3",
+            "mus62.mp3",
+            "mus63.mp3",
+            "mus64.mp3",
+            "mus65.mp3",
+            "mus66.mp3",
+            "mus67.mp3",
+            "mus68.mp3",
+            "mus69.mp3",
+            "mus70.mp3",
+            "mus71.mp3",
+            "mus72.mp3",
+            "mus73.mp3",
+            "mus74.mp3",
+            "mus75.mp3",
+            "mus76.mp3",
+            "mus77.mp3",
+            "mus78.mp3",
+            "mus79.mp3",
+            "mus80.mp3",
+            "mus81.mp3",
+            "mus82.mp3",
+            "mus83.mp3",
+            "mus84.mp3",
+            "mus85.mp3",
+            "mus86.mp3",
+            "mus87.mp3",
+            "mus88.mp3",
+            "mus89.mp3",
+            "mus90.mp3",
+            "mus91.mp3",
+            "mus92.mp3",
+            "mus93.mp3",
+            "mus94.mp3",
+            "mus95.mp3",
+            "mus96.mp3",
+            "mus97.mp3",
+            "mus98.mp3",
+            "mus99.mp3",
+            "mus100.mp3",
+            "mus101.mp3",
+            "mus102.mp3",
+            "mus103.mp3",
+            "mus104.mp3",
+            "mus105.mp3",
+            "mus106.mp3",
+            "mus107.mp3",
+            "mus108.mp3",
+            "mus109.mp3",
+            "mus110.mp3",
+            "mus111.mp3",
+            "mus112.mp3",
+            "mus113.mp3",
+            "mus114.mp3",
+            "mus115.mp3",
+            "mus116.mp3",
+            "mus117.mp3",
+            "mus118.mp3",
+            "mus119.mp3",
+            "mus120.mp3",
+            "mus121.mp3",
+            "mus122.mp3",
+            "mus123.mp3",
+            "mus124.mp3",
+            "mus125.mp3",
+            "mus126.mp3",
+            "mus127.mp3",
+            "mus128.mp3",
+            "mus129.mp3",
+            "mus130.mp3",
+            "mus131.mp3",
+            "mus132.mp3",
+            "mus133.mp3",
+            "mus134.mp3",
+            "mus135.mp3",
+            "mus136.mp3",
+            "mus137.mp3",
+            "mus138.mp3",
+            "mus139.mp3",
+            "mus140.mp3",
+            "mus141.mp3",
+            "mus142.mp3",
+            "mus143.mp3",
+            "mus144.mp3",
+            "mus145.mp3",
+            "mus146.mp3",
+            "mus147.mp3",
+            "mus148.mp3",
+            "mus149.mp3",
+            "mus150.mp3",
+            "mus151.mp3",
+            "mus152.mp3",
+            "mus153.mp3",
+            "mus154.mp3",
+            "mus155.mp3",
+            "mus156.mp3",
+            "mus157.mp3",
+            "mus158.mp3",
+            "mus159.mp3",
+            "mus160.mp3",
+            "mus161.mp3",
+            "mus162.mp3",
+            "mus163.mp3",
+            "mus164.mp3",
+            "mus165.mp3",
+            "mus166.mp3",
+            "mus167.mp3",
+            "mus168.mp3",
+            "mus169.mp3",
+            "mus170.mp3",
+            "mus171.mp3",
+            "mus172.mp3",
+            "mus173.mp3",
+            "mus174.mp3",
+            "mus175.mp3",
+            "mus176.mp3",
+            "mus177.mp3",
+            "mus178.mp3",
+            "mus179.mp3",
+            "mus180.mp3",
+            "mus181.mp3",
+            "mus182.mp3",
+            "mus183.mp3",
+            "mus184.mp3",
+            "mus185.mp3",
+            "mus186.mp3",
+            "mus187.mp3",
+            "mus188.mp3",
+            "mus189.mp3",
+            "mus190.mp3",
+            "mus191.mp3",
+            "mus192.mp3",
+            "mus193.mp3",
+            "mus194.mp3",
+            "mus195.mp3",
+            "mus196.mp3",
+            "mus197.mp3",
+            "mus198.mp3",
+            "mus199.mp3",
+            "mus200.mp3",
+            "mus201.mp3",
+            "mus202.mp3",
+            "mus203.mp3",
+            "mus204.mp3",
+            "mus205.mp3",
+            "mus206.mp3",
+            "mus207.mp3",
+            "mus208.mp3",
+            "mus209.mp3",
+            "mus210.mp3",
+            "mus211.mp3",
+            "mus212.mp3",
+            "mus213.mp3",
+            "mus214.mp3",
+            "mus215.mp3",
+            "mus216.mp3",
+            "mus217.mp3",
+            "mus218.mp3",
+            "mus219.mp3",
+            "mus220.mp3",
+            "mus221.mp3",
+            "mus222.mp3",
+            "mus223.mp3",
+            "mus224.mp3",
+            "mus225.mp3",
+            "mus226.mp3",
+            "mus227.mp3",
+            "mus228.mp3",
+            "mus229.mp3",
+            "mus230.mp3",
+            "mus231.mp3",
+            "mus232.mp3",
+            "mus233.mp3",
+            "mus234.mp3",
+            "mus235.mp3",
+            "mus236.mp3",
+            "mus237.mp3",
+            "mus238.mp3",
+            "mus239.mp3",
+            "mus240.mp3",
+            "mus241.mp3",
+            "mus242.mp3",
+            "mus243.mp3",
+            "mus244.mp3",
+            "mus245.mp3",
+            "mus246.mp3",
+            "mus247.mp3",
+            "mus248.mp3",
+            "mus249.mp3",
+            "mus250.mp3",
+            "mus251.mp3",
+            "mus252.mp3",
+            "mus253.mp3",
+            "mus254.mp3",
+            "mus255.mp3",
+            "mus256.mp3",
+            "mus257.mp3",
+            "mus258.mp3",
+            "mus259.mp3",
+            "mus260.mp3",
+            "mus261.mp3",
+            "mus262.mp3",
+            "mus263.mp3",
+            "mus264.mp3",
+            "mus265.mp3",
+            "mus266.mp3",
+            "mus267.mp3",
+            "mus268.mp3",
+            "mus269.mp3",
+            "mus270.mp3",
+            "mus271.mp3",
+            "mus272.mp3",
+            "mus273.mp3",
+            "mus274.mp3",
+            "mus275.mp3",
+            "mus276.mp3",
+            "mus277.mp3",
+            "mus278.mp3",
+            "mus279.mp3",
+            "mus280.mp3",
+            "mus281.mp3",
+            "mus282.mp3",
+            "mus283.mp3",
+            "mus284.mp3",
+            "mus285.mp3",
+            "mus286.mp3",
+            "mus287.mp3",
+            "mus288.mp3",
+            "mus289.mp3",
+            "mus290.mp3",
+            "mus291.mp3",
+            "mus292.mp3",
+            "mus293.mp3",
+            "mus294.mp3",
+            "mus295.mp3",
+            "mus296.mp3",
+            "mus297.mp3",
+            "mus298.mp3",
+            "mus299.mp3",
+            "mus300.mp3",
+            "mus301.mp3",
+            "mus302.mp3",
+            "mus303.mp3",
+            "mus304.mp3",
+            "mus305.mp3",
+            "mus306.mp3",
+            "mus307.mp3",
+            "mus308.mp3",
+            "mus309.mp3",
+            "mus310.mp3",
+            "mus311.mp3",
+            "mus312.mp3",
+            "mus313.mp3",
+            "mus314.mp3",
+            "mus315.mp3",
+            "mus316.mp3",
+            "mus317.mp3",
+            "mus318.mp3",
+            "mus319.mp3",
+            "mus320.mp3",
+            "mus321.mp3",
+            "mus322.mp3",
+            "mus323.mp3",
+            "mus324.mp3",
+            "mus325.mp3",
+            "mus326.mp3",
+            "mus327.mp3",
+            "mus328.mp3",
+            "mus329.mp3",
+            "mus330.mp3",
+            "mus331.mp3",
+            "mus332.mp3",
+            "mus333.mp3",
+            "mus334.mp3",
+            "mus335.mp3",
+            "mus336.mp3",
+            "mus337.mp3",
+            "mus338.mp3",
+            "mus339.mp3",
+            "mus340.mp3",
+            "mus341.mp3",
+            "mus342.mp3",
+            "mus343.mp3",
+            "mus344.mp3",
+            "mus345.mp3",
+            "mus346.mp3",
+            "mus347.mp3",
+            "mus348.mp3",
+            "mus349.mp3",
+            "mus350.mp3",
+            "mus351.mp3",
+            "mus352.mp3",
+            "mus353.mp3",
+            "mus354.mp3",
+            "mus355.mp3",
+            "mus356.mp3",
+            "mus357.mp3",
+            "mus358.mp3",
+            "mus359.mp3",
+            "mus360.mp3",
+            "mus361.mp3",
+            "mus362.mp3",
+            "mus363.mp3",
+            "mus364.mp3",
+            "mus365.mp3",
+            "mus366.mp3",
+            "mus367.mp3",
+            "mus368.mp3",
+            "mus369.mp3",
+            "mus370.mp3",
+            "mus371.mp3",
+            "mus372.mp3",
+            "mus373.mp3",
+            "mus374.mp3",
+            "mus375.mp3",
+            "mus376.mp3",
+            "mus377.mp3",
+            "mus378.mp3",
+            "mus379.mp3",
+            "mus380.mp3",
+            "mus381.mp3",
+            "mus382.mp3",
+            "mus383.mp3",
+            "mus384.mp3",
+            "mus385.mp3",
+            "mus386.mp3",
+            "mus387.mp3",
+            "mus388.mp3",
+            "mus389.mp3",
+            "mus390.mp3",
+            "mus391.mp3",
+            "mus392.mp3",
+            "mus393.mp3",
+            "mus394.mp3",
+            "mus395.mp3",
+            "mus396.mp3",
+            "mus397.mp3",
+            "mus398.mp3",
+            "mus399.mp3",
+            "mus400.mp3",
+            "mus401.mp3",
+            "mus402.mp3",
+            "mus403.mp3",
+            "mus404.mp3",
+            "mus405.mp3",
+            "mus406.mp3",
+            "mus407.mp3",
+            "mus408.mp3",
+            "mus409.mp3",
+            "mus410.mp3",
+            "mus411.mp3",
+            "mus412.mp3",
+            "mus413.mp3",
+            "mus414.mp3",
+            "mus415.mp3",
+            "mus416.mp3",
+            "mus417.mp3",
+            "mus418.mp3",
+            "mus419.mp3",
+            "mus420.mp3",
+            "mus421.mp3",
+            "mus422.mp3",
+            "mus423.mp3",
+            "mus424.mp3",
+            "mus425.mp3",
+            "mus426.mp3",
+            "mus427.mp3",
+            "mus428.mp3",
+            "mus429.mp3",
+            "mus430.mp3",
+            "mus431.mp3",
+            "mus432.mp3",
+            "mus433.mp3",
+            "mus434.mp3",
+            "mus435.mp3",
+            "mus436.mp3",
+            "mus437.mp3",
+            "mus438.mp3",
+            "mus439.mp3",
+            "mus440.mp3",
+            "mus441.mp3",
+            "mus442.mp3",
+            "mus443.mp3",
+            "mus444.mp3",
+            "mus445.mp3",
+            "mus446.mp3",
+            "mus447.mp3",
+            "mus448.mp3",
+            "mus449.mp3",
+            "mus450.mp3",
+            "mus451.mp3",
+            "mus452.mp3",
+            "mus453.mp3",
+            "mus454.mp3",
+            "mus455.mp3",
+            "mus456.mp3",
+            "mus457.mp3",
+            "mus458.mp3",
+            "mus459.mp3",
+            "mus460.mp3",
+            "mus461.mp3",
+            "mus462.mp3",
+            "mus463.mp3",
+            "mus464.mp3",
+            "mus465.mp3",
+            "mus466.mp3",
+            "mus467.mp3",
+            "mus468.mp3",
+            "mus469.mp3",
+            "mus470.mp3",
+            "mus471.mp3",
+            "mus472.mp3",
+            "mus473.mp3",
+            "mus474.mp3",
+            "mus475.mp3",
+            "mus476.mp3",
+            "mus477.mp3",
+            "mus478.mp3",
+            "mus479.mp3",
+            "mus480.mp3",
+            "mus481.mp3",
+            "mus482.mp3",
+            "mus483.mp3",
+            "mus484.mp3",
+            "mus485.mp3",
+            "mus486.mp3",
+            "mus487.mp3",
+            "mus488.mp3",
+            "mus489.mp3",
+            "mus490.mp3",
+            "mus491.mp3",
+            "mus492.mp3",
+            "mus493.mp3",
+            "mus494.mp3",
+            "mus495.mp3",
+            "mus496.mp3",
+            "mus497.mp3",
+            "mus498.mp3",
+            "mus499.mp3",
+            "mus500.mp3",
+            "mus501.mp3",
+            "mus502.mp3",
+            "mus503.mp3",
+            "mus504.mp3",
+            "mus505.mp3",
+            "mus506.mp3",
+            "mus507.mp3",
+            "mus508.mp3",
+            "mus509.mp3",
+            "mus510.mp3",
+            "mus511.mp3",
+            "mus512.mp3",
+            "mus513.mp3",
+            "mus514.mp3",
+            "mus515.mp3",
+            "mus516.mp3",
+            "mus517.mp3",
+            "mus518.mp3",
+            "mus519.mp3",
+            "mus520.mp3",
+            "mus521.mp3",
+            "mus522.mp3",
+            "mus523.mp3",
+            "mus524.mp3",
+            "mus525.mp3",
+            "mus526.mp3",
+            "mus527.mp3",
+            "mus528.mp3",
+            "mus529.mp3",
+            "mus530.mp3",
+            "mus531.mp3",
+            "mus532.mp3",
+            "mus533.mp3",
+            "mus534.mp3",
+            "mus535.mp3",
+            "mus536.mp3",
+            "mus537.mp3",
+            "mus538.mp3",
+            "mus539.mp3",
+            "mus540.mp3",
+            "mus541.mp3",
+            "mus542.mp3",
+            "mus543.mp3",
+            "mus544.mp3",
+            "mus545.mp3",
+            "mus546.mp3",
+            "mus547.mp3",
+            "mus548.mp3",
+            "mus549.mp3",
+            "mus550.mp3",
+            "mus551.mp3",
+            "mus552.mp3",
+            "mus553.mp3",
+            "mus554.mp3",
+            "mus555.mp3",
+            "mus556.mp3",
+            "mus557.mp3",
+            "mus558.mp3",
+            "mus559.mp3",
+            "mus560.mp3",
+            "mus561.mp3",
+            "mus562.mp3",
+            "mus563.mp3",
+            "mus564.mp3",
+            "mus565.mp3",
+            "mus566.mp3",
+            "mus567.mp3",
+            "mus568.mp3",
+            "mus569.mp3",
+            "mus570.mp3",
+            "mus571.mp3",
+            "mus572.mp3",
+            "mus573.mp3",
+            "mus574.mp3",
+            "mus575.mp3",
+            "mus576.mp3",
+            "mus577.mp3",
+            "mus578.mp3",
+            "mus579.mp3",
+            "mus580.mp3",
+            "mus581.mp3",
+            "mus582.mp3",
+            "mus583.mp3",
+            "mus584.mp3",
+            "mus585.mp3",
+            "mus586.mp3",
+            "mus587.mp3",
+            "mus588.mp3",
+            "mus589.mp3",
+            "mus590.mp3",
+            "mus591.mp3",
+            "mus592.mp3",
+            "mus593.mp3",
+            "mus594.mp3",
+            "mus595.mp3",
+            "mus596.mp3",
+            "mus597.mp3",
+            "mus598.mp3",
+            "mus599.mp3",
+            "mus600.mp3",
+            "mus601.mp3",
+            "mus602.mp3",
+            "mus603.mp3",
+            "mus604.mp3",
+            "mus605.mp3",
+            "mus606.mp3",
+            "mus607.mp3"
+        ];
+
+        // 获取音频元素
+        let oAudio = document.getElementById("myaudio");
+        // 设置跨域属性
+        oAudio.crossOrigin = "anonymous";
+        // 获取画布宽高
+        let WIDTH = canvas.width;
+        let HEIGHT = canvas.height;
+        //随机数
+        function getRandom() {
+            const array = new Uint32Array(2);
+            crypto.getRandomValues(array);
+            const randomNum = (array[0] * Math.pow(2, 20) + array[1]) / Math.pow(2, 52);
+            return randomNum;
+        }
+        // 随机选择音频文件
+        let audioNum = Math.floor(getRandom() * audioArray.length);
+        // 设置音频文件路径
+        oAudio.src = `./music/${audioArray[audioNum]}`;
+        // 双击事件，控制音频播放暂停
+        window.ondblclick = function () {
+            if (oAudio.paused) {
+                oAudio.play();
+                startTimer();
+            } else {
+                oAudio.pause();
+                clearInterval(timerInterval); // 停止计时器
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+                //在这里添加需要在页面加载完成后执行的代码
+                startTimer(); // 启动计时器
+            });
+            // 创建音频上下文
+            let oCtx = new AudioContext();
+            // 创建音频源
+            let audioSrc = oCtx.createMediaElementSource(oAudio);
+            // 创建分析器
+            let analyser = oCtx.createAnalyser();
+            // 连接音频源和分析器
+            audioSrc.connect(analyser);
+            // 连接分析器和目标
+            analyser.connect(oCtx.destination);
+            // 设置FFT大小
+            analyser.fftSize = 2048;
+            // 获取频率数据长度
+            let bufferLength = analyser.frequencyBinCount;
+            console.log(bufferLength);
+            // 创建数据数组
+            let dataArray = new Uint8Array(bufferLength);
+            console.log(dataArray);
+            console.log(dataArray.length);
+            // 计算每个条形图的宽度
+            let barWidth = WIDTH / bufferLength;
+            let barHeight;
+            // 绘制条形图
+            function draw() {
+                // 获取频率数据
+                analyser.getByteFrequencyData(dataArray);
+                let x = 0;
+                // 清空画布
+                ctx.clearRect(0, 0, WIDTH, canvas.height);
+                // 绘制条形图
+                for (let i = 0; i < bufferLength; i++) {
+                    barHeight = dataArray[i];
+                    ctx.fillStyle = "rgb(30,144,255)";
+                    ctx.fillRect(WIDTH / 2 + x + 3, canvas.height, barWidth, -barHeight);
+                    ctx.fillRect(WIDTH / 2 - x, canvas.height, barWidth, -barHeight);
+                    x += barWidth + 1;
+                }
+                // 循环绘制
+                window.requestAnimationFrame(draw);
+            }
+            draw();
+        };
+        //避免用户窗口高度不够
+        window.addEventListener('resize', function () {
+            var windowHeight = window.innerHeight;
+            if (windowHeight < 700) {
+                canvas.style.display = 'none';
+            } else if (windowHeight >= 700) {
+                canvas.style.display = 'block';
+            }
+        });
+
+        //实时绘制画布
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight - document.getElementById("footer").offsetHeight;
+            WIDTH = canvas.width; // 更新WIDTH的值
+            HEIGHT = canvas.height; // 更新HEIGHT的值
+        }
+        window.addEventListener("resize", resizeCanvas);
+
+        //复杂元素只在Windows端显示
+        if (/Win/.test(navigator.userAgent)) {
+            canvas.style.display = "block";
+            document.getElementById("timer").style.display = "block";
+        } else {
+            canvas.style.display = "none";
+            document.getElementById("timer").style.display = "none";
+            document.getElementById("website").style.display = "none";
+            document.getElementById("color-bar-right").style.display = "none";
+            document.getElementById("color-bar-left").style.display = "none";
+
+
+        }
+
+        // 音频播放结束事件，随机选择下一个音频文件并播放
+        oAudio.onended = function () {
+            console.log("播放开始");
+            audioNum = Math.floor(Math.random() * audioArray.length);
+            oAudio.src = `./music/${audioArray[audioNum]}`;
+            oAudio.play();
+        };
+        // 初始音量为50
+        let volume = 50;
+        // 获取音量控制元素
+        const slider = document.querySelector(".volume-slider");
+        const sliderBg = document.querySelector(".slider-bg");
+        const sliderProgress = document.querySelector(".slider-progress");
+        const sliderHandle = document.querySelector(".slider-handle");
+        // 鼠标按下或触摸开始事件，开始拖动音量控制元素
+        sliderHandle.addEventListener("mousedown", handleMouseDown);
+        sliderHandle.addEventListener("touchstart", handleMouseDown);
+        function handleMouseDown(event) {
+            event.preventDefault();
+            document.addEventListener("mousemove", handleMouseMove);
+            document.addEventListener("touchmove", handleMouseMove);
+            document.addEventListener("mouseup", handleMouseUp);
+            document.addEventListener("touchend", handleMouseUp);
+            handleMouseMove(event);
+        }
+        // 鼠标移动或触摸移动事件，更新音量控制元素位置和音量值
+        function handleMouseMove(event) {
+            const sliderWidth = slider.offsetWidth;
+            const handleWidth = sliderHandle.offsetWidth;
+            const sliderLeft = slider.getBoundingClientRect().left;
+            const clientX =
+                event.type === "touchmove" ? event.touches[0].clientX : event.clientX;
+            let position = clientX - sliderLeft - handleWidth / 2;
+            position = Math.max(0, Math.min(position, sliderWidth - handleWidth));
+            const progress = position / (sliderWidth - handleWidth);
+            volume = Math.round(progress * 100);
+            setVolume();
+            updateSlider(position);
+        }
+        // 鼠标抬起或触摸结束事件，停止拖动音量控制元素
+        function handleMouseUp(event) {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("touchmove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+            document.removeEventListener("touchend", handleMouseUp);
+        }
+
+        function setVolume() {
+            // 设置音量
+            const audio = document.querySelector("audio");
+            if (audio) {
+                audio.volume = volume / 100;
+            }
+        }
+
+        function updateSlider(position) {
+            sliderProgress.style.width = position + "px";
+            sliderHandle.style.left = position + "px";
+            sliderHandle.setAttribute("aria-valuenow", volume);
+        }
+
+        window.onerror = function (message, source, lineno, colno, error) {
+            return true;
+        };
+
+        document.addEventListener(
+            "contextmenu",
+            function (e) {
+                e.preventDefault();
+            },
+            false
+        );
+
+        document.addEventListener("keydown", function (event) {
+            if (event.keyCode == 123) {
+                //快速点击F12可以强制进入控制台，要保密哦 ! ! !   不然就不给你进啦
+                var password = prompt("请输入管理员口令 | 目前共收录" + audioArray.length + "首");
+                if (password !== "xhhx") {
+                    event.preventDefault();
+                }
+            }
+        });
+
+        setPageSize();
+        window.addEventListener("resize", setPageSize);
+
+        function prevSong() {
+            audioNum--;
+            if (audioNum < 0) {
+                audioNum = audioArray.length - 1;
+            }
+            oAudio.src = `./music/${audioArray[audioNum]}`;
+            oAudio.play();
+        }
+
+        function nextSong() {
+            audioNum++;
+            if (audioNum >= audioArray.length) {
+                audioNum = 0;
+            }
+            oAudio.src = `./music/${audioArray[audioNum]}`;
+            oAudio.play();
+        }
+
+    </script>
+    <script src="./blog-static.cnblogs.com_files_e-cat_cursor-effects.js"></script>
+    <script>
+        const cursorSpecialEffects = new CursorSpecialEffects()
+        cursorSpecialEffects.init()
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var isWindows = navigator.userAgent.indexOf("Windows") != -1; // 检测是否为Windows
+            if (isWindows) {
+                function rainAnimation(time) {
+                    setInterval(() => {
+                        // 创建rain
+                        var rain = document.createElement("div");
+                        //初始化rain
+                        //rain.style.z-index: 1;
+                        rain.style.position = "fixed"; //相对于视窗定位
+                        rain.style.height = "2px"; // 将高度和宽度交换
+                        rain.style.width = "45px"; // 将高度和宽度交换
+                        rain.style.backgroundColor = "#e4edff";
+                        rain.style.filter = "blur(1px)";
+                        rain.style.top = Math.random() * 1080 + "px"; // 垂直随机出现
+                        rain.style.left = "0"; // 从左侧开始
+                        rain.style.opacity = parseInt(Math.random() * 10) / 10 + ""; // 随机透明度
+                        // 向body里添加子节点rain
+                        document.body.appendChild(rain);
+                        // rain动画
+                        var timer = setInterval(() => {
+                            var left = parseInt(rain.style.left); // 获取当前距离左侧的距离
+                            var i = 1;
+                            i++;
+                            rain.style.left = left + 5 * Math.pow(i, 2) + "px"; // 水平运动
+                            if (left >= 1920) { // 判断距离左侧是否大于视窗宽度
+                                clearInterval(timer);
+                                rain.parentNode.removeChild(rain);
+                            }
+                        }, time);
+                    });
+                }
+                rainAnimation(25);
+            }
+        };
+    </script>
+
+</body>
+
+</html>
